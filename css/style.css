@@ -1,0 +1,38 @@
+body {
+font-family: clone-rounded-latin, sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav a {
+    columns: #3b3b3b;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.landing {
+    background-image: url(../images/firstpage.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.slogen {
+    color: black;
+}
+
+
+
