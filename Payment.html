@@ -11,46 +11,58 @@
 
     <body>
         <header>
-            <h1>RainyDays</h1> 
             <nav>
                 <ul>
                     <li><a href="index.html">Rainydays</a></li>
                     <li><a href="Products.html">Products</a></li>
                     <li><a href="About us.html">About us</a></li>
                     <li><a href="Contract.html">Contact</a></li>
+                    <li><form action="/"></form>
+                    <input type="Text" placeholder="Search.." name="search"></li>
+                    <li><a href="Favourite.html"></a><i class="far fa-heart"></i></li>
+                    <li><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
                 </ul>
             </nav>
         </header>
-    
-
-    <main>
+        
         <nav>
             <li><a href="Favourite.html">Favourite</a></li>
             <li><a href="Your bag.html">Your bag</a></li>
             <li><a href="Payment.html">Payment</a></li>
         </nav>
-            
 
+    <main>
+        
         <div class="payment">
             <fieldset>
-                <legend><h4>Billig info</h4></legend>
-                <form action="form-success.php" method="POST"> 
+                <div div class="x">
+                    <div>
+                        <legend><h4>Billig info</h4></legend>
+                        <form action="form-success.php" method="POST"> 
+                    </div>
+                        <label for="name">Full name</label>
+                        <input type="text" name="name" class="name">
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="Address" class="Address">
+                    </div> 
+                    
+                    <div class="city_zip_container">
+                        <label for="city">City</label>
+                        <input type="text" name="city" class="city">
 
-                 <label for="name">Full name</label>
-                 <input type="text" name="name" class="name">
+                        <label for="zipcode">Zip Code</label>
+                        <input type="number" name="zipcode" class="zipcode">
+                    </div>
+                    
+                    <div>
+                        <label for="country">Country</label>
+                        <input type="text" name="country" class="country">
+                    </div>
+                </div>
+    
 
-                 <label for="address">Address</label>
-                 <input type="text" name="Address" class="Address">
-
-                 <label for="city">City</label>
-                 <input type="text" name="city" class="city">
-
-                 <label for="zipcode">Zip Code</label>
-                 <input type="number" name="zipcode" class="zipcode">
-                
-                 <label for="country">Country</label>
-                 <input type="text" name="country" class="country">
-
+                <div class="credit_card_info_container">
                  <legend><h4>Credit Card info</h4></legend>
 
                  <label for="">Card Number</label>
@@ -64,17 +76,11 @@
 
                  <label for="">CVV</label>
                  <input type="text" name="" class="">
-
-
-
-
-
-
+                </div>
             </fieldset>
 
 
         </div>
-            </form>
      </main>
 
      <footer>
