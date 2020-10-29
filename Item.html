@@ -14,52 +14,68 @@
             <nav>
                 <ul>
                     <li><a href="index.html"> <img src="images/RainyDays_Logo (1).png" ></a></li>
-                    <li><a href="Products.html">Products</a></li>
-                    <li><a href="About us.html">About us</a></li>
-                    <li><a href="Contract.html">Contact</a></li>
+                    <li class="products"><a href="Products.html">Products</a></li>
+                    <li class="aboutus"><a href="About us.html">About us</a></li>
+                    <li class="contact"><a href="Contract.html">Contact</a></li>
                     <li><form action="/"></form>
                     <li><input type="Search" placeholder="Search.." name="search"></li>
-                    <li><a href="Favourite.html"><i class="far fa-heart"></i></a></i></li>
-                    <li><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="favorite"><a href="Favourite.html"><i class="far fa-heart"></i></a></i></li>
+                    <li class="yourbag"><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
                 </ul>
             </nav>
         </header>
 
 
-        <nav>
+        <nav class="products_nav">
             <ul>
-                <li><a href="Products.html">Products</a></li>
-                 <li><a href="Products.html">Men's</a></li>
-                 <li><a href="Products.html">Womens</a></li>
-                 <li><a href="Products.html">Kids</a></li>
-                 <li><a href="Products.html">Backpacks</a></li>
-                 <li><a href="Products.html">More</a></li>
+                <li class="products" ><a href="Products.html">Products</a></li>
+                <li class="products"><a href="Products.html">Men's</a></li>
+                <li class="products"><a href="Products.html">Womens</a></li>
+                <li class="products"><a href="Products.html">Kids</a></li>
+                <li class="products"><a href="Products.html">Backpacks</a></li>
+                <li class="products"><a href="Products.html">More</a></li>
             </ul>
         </nav>
 
 
 
     <main>
-        <section>
-            <h2>Rainydays store</h2>
-            <p>This is a online jacket store.</p>
-        </section>
-     </main>
-     Products - Men's - Woman's - Kids - Backpacks - More
+        <div item_container>
+            <div class="model_item">
+                <img src="/images/model_jacket.jpg" alt="A model wearing red jacket">
+                <img class="jacket_model2" src="/images/model_jacket2.jpg" alt="red jacket from front">
+                <img class="jacket_model3" src="/images/model_jacket_3.jpg" alt="red jacket from behind">
+                <p> Details: Regular lit</p>
+                <p>-100% ployester, Wind resistant shell and water profed</p>
+                <p>-2 lower zipper pakcet, 2upper zipper pocket, 1 right sleeve pocket</p>
+                <p>-5 layer to insure warmth</p>
+            </div>
 
-     topseller                                                   Sorting:Most popular
-     rainjackets
-     casualjackets
-     coats
-     winterjackets
-     snow jackets
-     running jackets
-     sales
 
-     
-     <footer class="container_footer">
+
+            <div class="rainjacket_details">
+                <p>Red Rain jacket </p>
+                <p>$ 99.00</p>
+                <p>Availability: in stock</p>
+                <p>Product code: AN69433 - Premium</p>
+                <p>Size: <span>S</span> <span>M</span> <span>L</span> <span>XL</span> </p>
+                <p> 1 <span button>ADD TO BAG</button>          <i class="fas fa-heart"></i>          </span></p>
+                <p>Colors</p>
+                <div class="jacket_colors" >
+                    <img src="/images/jacket_yellow.jpg" alt="Jacket in yellow">
+                    <img src="/images/jacket_black.jpg" alt="jacket in black">
+                    <img src="/images/jacket_blue.jpg" alt="jacket in blue">
+                    <img src="/images/jacket_green.jpg" alt="jacket in green">
+                </div>
+            </div>
+        </div>
+    </main>
+<button></button>
+
+
+    <footer class="container_footer">
         <p>Copyright &copy; 2020 RainyDays</p> 
-     </footer>
+    </footer>
 
     </body>
 </html>

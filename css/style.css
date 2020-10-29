@@ -112,7 +112,6 @@ h3 {
     display: flex;
     flex: center;
 
- 
 }
 .item1 {
     flex-grow:1 ;
@@ -148,6 +147,10 @@ h3 {
     margin-left: 100px;
     height: 650px;
     width: 350px;
+}
+
+.products:hover{
+    text-decoration: underline;
 }
 
 .products_nav {
@@ -186,12 +189,50 @@ h3 {
 
 }
 .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9 { 
- 
     padding: 0 80px;
-
-    
 }
 
+/*                                                   Item page                                       */
+
+
+.item_container{
+    display: ;
+}
+
+
+
+.model_item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 56srem;
+    margin: 5rem 0rem 5rem 7rem;
+}
+
+.jacket_model2{
+    margin-left: 4rem;
+}
+
+.jacket_model3 {
+    position: relative;
+    bottom: 17.5rem;
+    right: 14rem;
+}
+
+
+.rainjacket_details{
+    font-size: 2rem;
+    font-weight: 700;
+    width: 40rem;
+    position: relative;
+    left: 66rem ;
+    bottom: 55rem ;
+    border-left: 2px;
+}
+
+
+.jacket_colors{
+
+}
 
 
 /*                                                 NAV2 meny bar                                           */
@@ -228,9 +269,10 @@ h3 {
     font-size: 4rem;
     font-weight: bold;
     height: 650px;
-    
 }
-
+.aboutus:hover{
+    text-decoration: underline;
+}
 .mid_text {
     width: 45rem;
     color: whitesmoke;
@@ -238,7 +280,7 @@ h3 {
     text-decoration: underline;
     left: 35rem;
     top: 15rem;
-  
+
 
 }
 
@@ -254,7 +296,7 @@ h3 {
     height: 20rem;
     width: 130rem;
     margin: 2rem 5rem;
- 
+
 }
 .info2 {
     height: 20rem;
@@ -277,10 +319,13 @@ h3 {
     background-color: white;
     position: relative;
     top: 5rem;
+}
 
- }
+.contact:hover{
+    text-decoration: underline;
+}
 
- .contact_container {
+.contact_container {
     background: rgb(100,233,235);
     background: linear-gradient(0deg, rgba(100,233,235,1) 6%, rgba(255,242,214,1) 100%);
     height: 48rem;
@@ -288,21 +333,21 @@ h3 {
 }
 
 
- input[type=name] {
+input[type=name] {
     width: 33rem;
     padding: 17px 20px;
     margin: 8px 0;
     font-size: 1.3rem;
     border-radius: 4px;
- }
+}
 
- input[type=email] {
+input[type=email] {
     width: 33rem;
     padding: 17px 20px;
     margin: 8px 0;
     font-size: 1.3rem;  
     border-radius: 4px;    
- }
+}
 textarea {
     height: 175px;
     width: 575px;
@@ -325,7 +370,6 @@ input[value=send] {
     font-size: 1.3rem;
     cursor: pointer;
     font-weight: 700;
-   
 }
 
 
@@ -389,6 +433,9 @@ label{
     width: 95rem;
     margin-top: 5rem;
     margin-left: 5rem;
+}
+.yourbag:hover {
+        text-decoration: underline;
 }
 
 .jacket1_countainer {
@@ -510,6 +557,12 @@ label{
 
 .payment_container {
     display: flex;
+    background: rgb(252,215,211);
+    padding-bottom: 5rem;
+}
+
+.payment:hover{
+        text-decoration: underline;
 }
 
 .billig_info {
@@ -602,9 +655,11 @@ label{
     height: 3.5rem;
     border-radius: 5%;
     cursor: pointer;
-    margin-left: 45rem;
     background-color: lightcoral;
     border: none;
+    position: relative;
+    right: 45rem;
+    top: 41rem;
 }
 
 /*                                                      FOOTER                                      */
@@ -613,8 +668,9 @@ label{
 
 
 .container_footer{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700 ;
+
     
 }
 footer {
