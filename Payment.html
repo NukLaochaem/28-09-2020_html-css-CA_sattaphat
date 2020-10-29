@@ -13,51 +13,54 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html">Rainydays</a></li>
+                    <li><a href="index.html"> <img src="images/RainyDays_Logo (1).png" ></a></li>
                     <li><a href="Products.html">Products</a></li>
                     <li><a href="About us.html">About us</a></li>
                     <li><a href="Contract.html">Contact</a></li>
                     <li><form action="/"></form>
-                    <input type="Text" placeholder="Search.." name="search"></li>
-                    <li><a href="Favourite.html"></a><i class="far fa-heart"></i></li>
+                    <li><input type="Search" placeholder="Search.." name="search"></li>
+                    <li><a href="Favourite.html"><i class="far fa-heart"></i></a></i></li>
                     <li><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
                 </ul>
             </nav>
         </header>
         
-        <nav>
+        <nav class="nav2" >
             <li><a href="Favourite.html">Favourite</a></li>
-            <li><a href="Your bag.html">Your bag</a></li>
+            <li><a href="Yourbag.html">Your bag</a></li>
             <li><a href="Payment.html">Payment</a></li>
         </nav>
 
     <main>
         
-        <div class="payment">
-            <fieldset>
-                <div div class="x">
+        <div class="payment_container">
+           
+                <div div class="billig_info">
                     <div>
                         <legend><h4>Billig info</h4></legend>
                         <form action="form-success.php" method="POST"> 
-                    </div>
+                        </div>
+                    
+                    <div class="full_name">
                         <label for="name">Full name</label>
-                        <input type="text" name="name" class="name">
-                    <div>
+                        <input class="name_input" type="text" name="name" class="name">
+                    </div>
+                    <div class="address">
                         <label for="address">Address</label>
-                        <input type="text" name="Address" class="Address">
+                        <input class="address_input" type="text" name="Address" class="Address">
                     </div> 
                     
                     <div class="city_zip_container">
                         <label for="city">City</label>
-                        <input type="text" name="city" class="city">
+                        <input  type="text" name="city" class="city">
 
                         <label for="zipcode">Zip Code</label>
-                        <input type="number" name="zipcode" class="zipcode">
+                        <input  type="number" name="zipcode" class="zipcode">
                     </div>
                     
-                    <div>
+                    <div class="country_container">
                         <label for="country">Country</label>
-                        <input type="text" name="country" class="country">
+                        <input class="country_input" type="text" name="country" class="country">
                     </div>
                 </div>
     
@@ -66,21 +69,20 @@
                  <legend><h4>Credit Card info</h4></legend>
 
                  <label for="">Card Number</label>
-                 <input type="number" name="" class="">
+                 <input type="text" name="card_number" class="card_number">
 
-                 <label for="">Cardholder Name</label>
-                 <input type="text" name="" class="">
+                 <label for="Card">Cardholder Name</label>
+                 <input type="text" name="Cardholder" class="cardholder">
 
-                 <label for="">Expire Date</label>
-                 <input type="number" name="" class="">
+                 <label for="expire">Expire Date</label>
+                 <input type="number" name="expire_date" class="expire_date">
 
-                 <label for="">CVV</label>
-                 <input type="text" name="" class="">
+                 <label for="cvv">CVV</label>
+                 <input type="number" name="cvv" class="cvv">
                 </div>
-            </fieldset>
-
-
         </div>
+        <button class="paynow_btn">Pay Now</button>
+
      </main>
 
 

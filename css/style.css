@@ -6,11 +6,10 @@ font-style: normal;
 }
 
 
+/*                                             NAV topmeny bar                                                  */
 
 
 
-
-/* NAV topmeny bar */
 nav{
   /*  position: absolute  first page get over topmeny Bars */
     z-index: 2;
@@ -18,23 +17,36 @@ nav{
 
 nav li {
     display: inline-block;
+    
 }
 
 nav a {
     columns: #3b3b3b;
     text-decoration: none;
-    padding: 10px;
     font-size: 2.5em;
     font-weight: bold;
     color: black ;
-    padding: 0 7rem;
+    margin: 0 3.5rem;
+}
+
+input[type=search] {
+    width: 230px;
+    height: 35px;
+    font-size: 1.5rem;  
+    border-radius: 4px; 
+    margin: 0 10px;
 }
 
 
-/* Img first page*/
-body {
-   background-repeat: no-repeat;
-    background-size: contain; 
+
+/*                                              Images first page                           */
+
+
+
+
+section > img {
+    width: 100%;
+    height: 100%;
 }
 
 .img_slogan_container {
@@ -42,11 +54,15 @@ body {
 }
 
 
-/* Slogan for first page */
+
+
+/*                                               HOME first page                                */
+
+
 .slogan-block {
     position: absolute;
-    bottom: 50rem;
-    right: 20rem;
+    bottom: 10rem;
+    right: 10rem;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -69,19 +85,24 @@ h2 {
     transition-duration: 0.4s;
     font-weight: bolder;
     color: white;
-    background-color: black ;opacity: 0.8;
+    background-color: black ;opacity: 0.7;
     position: relative;
     right: 1rem;
+    cursor: pointer;
 }
 .shop_btn:hover {
-    background-color: salmon;
+    background-color: black; opacity: 1;
 }
 
 
-/* First page BESTSELLERS */
+
+
+/*                                              First page TOP SELLERS                                 */
+
+
 h3 {
     font-size:4rem;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 
@@ -89,71 +110,508 @@ h3 {
     font-size: 3rem;
     font-weight: 700;
     display: flex;
+    flex: center;
 
+ 
+}
+.item1 {
+    flex-grow:1 ;
+    text-align: center;
+}
 
-    border: 1px black solid;
+.item2 {
+    flex-grow: 1;
+    text-align: center;
+}
+.item3 {
+    flex-grow: 1;
+    text-align: center;
+}
+.item4 {
+    flex-grow: 1;
+    text-align: center;
 }
 
 
-/*----About us ----*/
 
 
-.container_about {
-    background-color: salmon;
-    font-size: 4rem;
-    font-weight: bold;
-    height: 600px;
-    position: relative;
-}
+/*                                                  PRODUCTS                                         */
 
-.about_rainydays{
-    display: flex;
-    flex:
-}
 
-.about_info {
+
+.Productslist_Container {
     font-size: 2rem;
     font-weight: 600;
+    border-right: 1px solid;
+    
+    margin-top: 60px;
+    margin-left: 100px;
+    height: 650px;
+    width: 350px;
+}
+
+.products_nav {
+    border-bottom: 1px solid rgb(112, 108, 108);
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 75px;
+    width: 93rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.Sorting {
+    font-size: 1.5rem;
+    font-weight: 700;
+    height:70px;
+    width: 300px;
+    position: relative;
+    left: 83rem;
+    bottom: 43rem;
+
+}
+
+.products_container {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 1120px;
+    height:1200px ;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 33rem;
+    bottom: 40rem;
+
+    
+
+}
+.jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9 { 
+ 
+    padding: 0 80px;
+
+    
+}
+
+
+
+/*                                                 NAV2 meny bar                                           */
+
+
+.nav2 {
+    border-bottom: 1px solid rgb(112, 108, 108);
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 75px;
+    width: 93rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.nav2:active {
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+/*                                                    About us                                                 */
+
+
+
+.container_aboutus {
+    background: rgb(252,171,134);
+    background: radial-gradient(circle, rgba(252,171,134,1) 0%, rgba(255,155,155,1) 100%);
+    font-size: 4rem;
+    font-weight: bold;
+    height: 650px;
+    
+}
+
+.mid_text {
+    width: 45rem;
+    color: whitesmoke;
+    position: relative;
+    text-decoration: underline;
+    left: 35rem;
+    top: 15rem;
+  
+
+}
+
+.container_P {
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: 1px black;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.info1 {
+    height: 20rem;
+    width: 130rem;
+    margin: 2rem 5rem;
+ 
+}
+.info2 {
+    height: 20rem;
+    width: 120rem;
+    margin: 2rem 2rem ;  
 }
     
 
 
 
+/*                                                     Contact                                           */
 
 
 
-/*----Payment----*/
+.fieldset_contract {
+    font-size: 2rem;
+    width: 560px;
+    height: 545px;
+    margin-left: 5rem;
+    background-color: white;
+    position: relative;
+    top: 5rem;
 
-.x{
-    display: flex;
-    flex-direction: column;
+ }
+
+ .contact_container {
+    background: rgb(100,233,235);
+    background: linear-gradient(0deg, rgba(100,233,235,1) 6%, rgba(255,242,214,1) 100%);
+    height: 48rem;
+    width: 100%;
+}
+
+
+ input[type=name] {
+    width: 33rem;
+    padding: 17px 20px;
+    margin: 8px 0;
+    font-size: 1.3rem;
+    border-radius: 4px;
+ }
+
+ input[type=email] {
+    width: 33rem;
+    padding: 17px 20px;
+    margin: 8px 0;
+    font-size: 1.3rem;  
+    border-radius: 4px;    
+ }
+textarea {
+    height: 175px;
+    width: 575px;
+    margin: 12px 0;
+    font-size: 2rem;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 4px;
+    resize: none;
+    
+}
+input[value=send] {
+    background-color: rgba(255, 255, 255, 0.295);
+    width: 575px ;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 700;
+   
+}
+
+
+h4 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
 }
 
+label{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.Contact_details_contrainer {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 750;
+    position: relative;
+    left: 50rem;
+    bottom: 35rem;
+}
+
+
+/*                                         Favorite                                            */
+
+.Favorite_jackets_container {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    width: 70rem;
+    height: 30rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+
+.fav_jacket1, .fav_jacket2, .fav_jacket3 {
+    padding: 0 1rem;
+    margin: 2rem 4rem;
+}
+.addtobag_btn {
+    background-color:rgb(51, 50, 50);
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/*                                                  Your bag                              */
+
+.yourbag_container {
+    height: 50rem;
+    width: 95rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.jacket1_countainer {
+    padding-bottom: 50px;
+    display: flex;
+    width: 94rem;
+    border-bottom: 1px solid black;
+}
+
+.jacket2_countainer {
+    padding: 50px 0 50px ;
+    display: flex;
+    border-bottom: 1px solid black;
+    margin: 0 160px 0 0;
+    width: 94rem;
+}
+
+.jacketimg_yourbag {
+    margin-left: 7rem;
+}
+
+.jacketimg_yourbag2 {
+    margin-left: 5rem;
+
+}
+
+
+.winter_jacket {
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    left: 4.8rem;
+    bottom: 2rem;
+}
+
+.size {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    right: 9rem ;
+    top: 4em;
+}
+
+
+.color {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    right: 15rem;
+    top: 11rem;
+}
+
+.amount {
+    font-size: 3rem;
+    border: 1px solid;
+    width: 14rem ;
+    height: 4.4rem ;
+    position: relative;
+    top: 3rem;
+    left: 5rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    position: relative;
+    left: 17rem;
+    top: 4rem;
+}
+
+.minus {
+    border-right: 1px solid ;
+    padding: 0px 20px 0 2px;
+    margin: 0 10px 0 20px;
+    height: 0px;
+}
+
+.plus {
+    border-left: 1px solid ;
+    padding: 0 10px;
+    margin: 0 0 0 55px;
+    height: 0px;
+}
+
+.checkout_container {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    width: 25rem;
+    position: relative;
+    left: 75rem;
+}
+.subtotal_yourbag {
+    margin-right: 5rem ;
+    margin-top: 3.1rem;
+}
+
+.pay_yourbag {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.checkout_btn {
+    font-size: 2rem ;
+    font-weight: 700;
+    width: 18rem;
+    border-radius: 5%;
+    padding: 25px 25px;
+    margin: 0 0;
+    position: relative;
+    left: 78rem;
+    top: 2rem;
+    color: white;
+    background-color: rgb(39, 38, 38);
+    cursor: pointer;
+}
+
+/*                                                       Payment                                         */
+
+.payment_container {
+    display: flex;
+}
+
+.billig_info {
+    font-size:2rem ;
+    font-weight: 900;
+    margin: 4rem 0 0 10rem;
+}
+
+.name_input{
+    width: 17rem ;
+    height:2rem ;
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+.address_input{
+    width: 17rem ;
+    height:2rem ;
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+
+}
+
+.city, .zipcode {
+    width: 7rem;
+    height: 2rem;
+    margin: 0 3rem 2rem 1rem; 
+    font-size: 1.3rem;
+    padding: 0.5rem; 
+}
+
+.country_input {
+    width: 17rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
 .city_zip_container{
     display: flex;
-    flex-direction: row;
-
+    height: 2rem;
+    width: 60rem ;
+    margin: 2.5rem 0 3rem 0;
 }
 
-.credit_card_info_container{
+.credit_card_info_container {
+    font-size: 5rem;
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    margin-top: 3.5rem;
 }
 
-fieldset{
-    display: flex;
-    justify-content: space-between;
-
+.card_number {
+    width: 17rem;
+    height: 2rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    padding: 0.5rem;
 }
 
+.cardholder {
+    width: 17rem;
+    height: 2rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.expire_date {
+    width: 17rem;
+    height: 2rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.cvv {
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.paynow_btn{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 12rem ;
+    height: 3.5rem;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-left: 45rem;
+    background-color: lightcoral;
+    border: none;
+}
+
+/*                                                      FOOTER                                      */
 
 
 
 
-
-/* FOOTER */
 .container_footer{
     font-size: 2rem;
     font-weight: 700 ;
@@ -164,8 +622,8 @@ footer {
 
 }
 
-
 @media (min-width:600px) and (max-width:1200px)
+
 
 
 
