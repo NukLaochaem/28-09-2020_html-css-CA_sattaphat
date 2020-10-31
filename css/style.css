@@ -40,6 +40,12 @@ input[type=search] {
     bottom: 1.2rem;
     
 }
+#hamburger-menu{
+    display: none;
+}
+.hamburger-label{
+    display: none;
+}
 
 
 /*                                              Images first page                           */
@@ -298,10 +304,7 @@ h2 {
 /*                                                    About us                                                 */
 
 .container_aboutus {
-    background: rgb(252,171,134);
     background: radial-gradient(circle, rgba(252,171,134,1) 0%, rgba(255,155,155,1) 100%);
-    font-size: 2rem;
-    font-weight: bold;
     height: 30rem;
     position: relative;
     bottom: 1.5rem;
@@ -309,20 +312,17 @@ h2 {
 .aboutus:hover{
     text-decoration: underline;
 }
-.mid_text {
-    width: 20rem;
+.mid_text, .mid_text2 {
+    font-size: 2rem;
+    font-weight: bold;
     color: whitesmoke;
-    position: relative;
     text-decoration: underline;
-    left: 30rem;
-    top: 10rem;
+    text-align: center;
+    padding-top: 7rem;
 }
-.mid_text2 {
-    color: whitesmoke;
-    text-decoration: underline;
-    position: relative;
-    left: 33.5rem;
-    top: 11rem;
+
+,.mid_text2{
+    padding-top: 1rem;
 }
 
 .container_P {
@@ -694,35 +694,36 @@ label{
 }
 
 /*                                                      FOOTER                                      */
-
-
-
-
 .container_footer{
     font-size: 1rem;
     font-weight: 700 ;
-
-    
 }
 footer {
     display: inline;
-
 }
 
-@media (min-width:600px) and (max-width:1200px)
 
 
 
 
 /* Mobil style*/
-{
+@media (min-width: 320px) and (max-width: 466px) {
+
+input[type=search] {
+    display: none;
+}
+.slogan-block {
+    display:none;
+}
+
 
 }
 
+
+
 /* Tablet style*/
-
-
-
+@media (min-width: 768px) and (max-width:991px) 
 
 /* Desktop style*/
 
+@media (min-width: 992px)
