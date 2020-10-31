@@ -81,7 +81,7 @@ h1 {
 }
 
 .shop_btn {
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 1.7rem;
     margin-top: 1rem;
     border-radius: 12px;
     border: 2px;
@@ -89,11 +89,11 @@ h1 {
     transition-duration: 0.4s;
     font-weight: bolder;
     text-decoration: none;
-    color: ivory;
+    color: white;
     background-color: black ;opacity: 0.8;
     cursor: pointer;
     position: relative;
-    right: 2.5rem;
+    right: 1.5rem;
 }
 .shop_btn:hover {
     background-color: black; opacity: 1;
@@ -590,7 +590,7 @@ label{
 .payment_container {
     display: flex;
     background: rgb(248, 222, 219);
-    padding-bottom:2rem;
+    padding-bottom:5rem;
 }
 
 .payment:hover{
@@ -689,7 +689,8 @@ label{
     background-color: lightcoral;
     border: none;
     position: relative;
-    right: 17rem;
+    right: 18rem;
+    top: 2.5rem;
 }
 
 /*                                                      FOOTER                                      */
