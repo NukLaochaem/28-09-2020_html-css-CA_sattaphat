@@ -65,7 +65,7 @@ section > img {
 
 .slogan-block {
     position: absolute;
-    bottom: 10rem;
+    top: 20rem;
     right: 10rem;
     color: white;
     padding-left: 20px;
@@ -89,11 +89,11 @@ h1 {
     transition-duration: 0.4s;
     font-weight: bolder;
     text-decoration: none;
-    color: white;
+    color: ivory;
     background-color: black ;opacity: 0.8;
     cursor: pointer;
     position: relative;
-    right: 1rem;
+    right: 2.5rem;
 }
 .shop_btn:hover {
     background-color: black; opacity: 1;
@@ -452,10 +452,10 @@ label{
     color: white;
     text-align: center;
     font-size: 1rem;
-    padding: 5px 25px 10px 25px;
+    padding: 10px 25px 10px 25px;
     cursor: pointer;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 7px;
+    margin-top: 5px;
     text-decoration: none;
 }
 
@@ -577,8 +577,7 @@ label{
     font-size: 1rem ;
     font-weight: 700;
     text-decoration: none;
-    padding: 1rem 4rem;
-    margin: 1rem 0 0 0;
+    padding: 1rem 3rem;
     position: relative;
     left: 52.5em;
     color: white;
