@@ -97,7 +97,7 @@ h1 {
 /*                                              First page TOP SELLERS                                 */
 
 
-h2 {
+.contact_H1{
     font-size:2rem;
     font-weight: 800;
     margin-left: 30px;
@@ -222,7 +222,14 @@ h2 {
     font-size: 1.5rem;
     font-weight: 900;
     text-decoration: underline;
+    margin-left: 38px;
 }
+.red_rain_jacket_price{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
 .text_details {
     font-size: 1rem;
     font-weight: 700;
@@ -367,7 +374,7 @@ input[value=send] {
 }
 
 
-h4 {
+h3 {
     font-size: 1.5rem;
     margin: 20px 0 50px 0;
 }
@@ -623,7 +630,7 @@ footer {
 
 @media only screen and (max-width: 1187px) { 
 
-/*                                      TOP NAV                                     */
+/*                                           Home page                     */
     input[type="search"] {
         display: none;
     }
@@ -631,34 +638,34 @@ footer {
         display: none;
     }
 
-/*                                         Products page                          */ 
+/*                                          Products page                    */
 .products_container{
     width: 900px;
     height: 1100px;
     position: relative;
     top: 45px;
     left: 50px;
-
 }
+
 .Sorting{
     display: none;
 }
+
 .Productslist_Container {
     display: none;
 }
+
 .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9{
     margin: 10px 20px;
     width: 180px;
 }
 
-
-/*                                         About                                    */
+/*                                      about us page                             */
 .info1, .info2 {
     font-size: 1.3rem;
 }
 
-
-/*                                     Item page                                    */
+/*                                      Item page                                */ 
     .model_item{
         font-size: 11px;
     }
@@ -703,8 +710,6 @@ footer {
         position: relative;
         left: 120px ;
     }
-
-
 
 }
 
