@@ -186,6 +186,8 @@ h2 {
 }
 .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9 { 
     padding: 0 35px;
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -305,9 +307,9 @@ h2 {
 
 .fieldset_contract {
     font-size: 1rem;
-    width: 450px;
+    width: 440px;
     height: 533px;
-    margin-left: 70px;
+    margin-left: 65px;
     background-color: white;
     position: relative;
     top: 60px;
@@ -327,7 +329,7 @@ h2 {
 input[type=name] {
     width: 400px;
     padding: 10px 15px;
-    margin: 8px 0;
+    margin: 8px 0 8px 0;
     font-size: 1.3rem;
     border-radius: 4px;
 }
@@ -609,29 +611,80 @@ footer {
 
 
 
-/* Mobil style*/
-@media only screen and (max-width: 1000px) { 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1187px) { 
+
+/*                                      TOP NAV                                     */
     input[type="search"] {
         display: none;
-    }
-
-    .model_item{
-        font-size: 11px;
-
-    }
-    .rainjacket_details{
-        position: relative;
-        left: 580px;
-        bottom: 630px;
-    }
-    
-    .products_container {
-        width: 450px;
-        position: relative;
     }
     .slogan-block{
         display: none;
     }
+
+/*                                         Products page                          */ 
+.products_container{
+    width: 900px;
+    height: 1100px;
+    position: relative;
+    top: 45px;
+    left: 50px;
+
+}
+.Sorting{
+    display: none;
+}
+.Productslist_Container {
+    display: none;
+}
+.jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9{
+    margin: 10px 20px;
+    width: 180px;
+}
+
+
+/*                                         About                                    */
+.info1, .info2 {
+    font-size: 1.3rem;
+}
+
+
+/*                                     Item page                                    */
+    .model_item{
+        font-size: 11px;
+    }
+    .jacket_model2{
+        position: relative;
+        right: 310px;
+        top: 200px;
+    }
+    .jacket_model3{
+        position: relative;
+        right: 270px;
+        top: 200px;
+    }
+    .rainjacket_details{
+        position: relative;
+        left:530px;
+        bottom: 470px;
+    }
+    .item_details_container {
+        display: none;
+    }
+
+
+
+/*                                       Checkout page                            */
+
     .checkout_container{
         margin-left: 750px;
     }
@@ -640,35 +693,19 @@ footer {
         margin-left: 750px;
     }
 
-
-
-
-
-
+    .Contact_details_contrainer{
+        position: relative;
+        left: 550px;
+        font-size: 1.5rem;
+    }
 
     .price{
         position: relative;
-        right: ;
+        left: 120px ;
     }
 
-    .Sorting{
-        display: none;
-    }
 
-    .Contact_details_contrainer{
-        
-    }
-    .aboutus {
-    /* større tekst når zoomer in */
-    }
 
 }
 
-
-
-@media only screen and (max-width: 800px) {
-    .item_details_container{
-        font-size: 1rem;
-    }
-}
 
