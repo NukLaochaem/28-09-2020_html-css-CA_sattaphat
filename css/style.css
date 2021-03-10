@@ -714,3 +714,37 @@ footer {
 }
 
 
+
+
+
+
+/*     design  Update                   */
+
+
+
+.succes_msg{
+    border: 2px solid rgb(16, 158, 3);
+    width: 400px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    display: none;
+}
+
+
+
+
+.cross{
+    padding-left: 100px;
+    text-decoration: none;
+}
+
+.cross::after{
+    display: none;
+
+}
+
