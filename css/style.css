@@ -382,7 +382,7 @@ h3 {
 label{
     display: block;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .Contact_details_contrainer {
@@ -532,7 +532,7 @@ label{
 
 /*                                                       Payment                                         */
 
-.payment_container {
+.form_container {
     display: flex;
     background: rgb(248, 222, 219);
     padding-bottom: 95px;
@@ -546,6 +546,7 @@ label{
     font-size: 1rem ;
     font-weight: 900;
     margin: 50px 0 0 100px;
+    
 }
 #full_name, #address, #country {
     width: 210px ;
@@ -575,6 +576,8 @@ label{
     flex-direction: column;
     position: relative;
     margin: 50px 0 0 240px;
+
+
 }
 
 #card_number, #card_holder, #expire_date {
@@ -735,16 +738,26 @@ footer {
     display: none;
 }
 
-
-
-
 .cross{
-    padding-left: 100px;
+    margin-left: 100px;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.cross::after{
+
+
+/*          validate input */
+
+.zipcode{
+    margin-left: 10px;
+}
+
+
+.name_error, .address_error, .city_error, .zip_error, .country_error, .cardNumber_error, .cardName_error, .expireDate_error, .cvv_error  {
+    color: red;
+    font-weight: 600;
     display: none;
-
 }
+
+
 

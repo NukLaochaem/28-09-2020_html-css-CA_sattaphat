@@ -45,54 +45,63 @@
         </nav>
 
         <main>
-            <div class="payment_container">
+            <form class="form_container">
                     <div class="billig_info">
                         <div>
                             <h1 class="contact_H1"><u>Billig info</u></h1>
                         </div>
-                        <form action="submit.php" method="POST"> 
                             
                             <div>
                                 <label for="name_fullname">Full name</label>
-                                <input type="full_name" name="name" id="full_name">
+                                <input type="text" name="name" id="full_name">
+                                <div class="name_error">Name Required</div>
                             </div>
 
                             <div>
                                 <label for="address">Address</label>
                                 <input type="text" name="address" id="address">
+                                <div class="address_error">Address Required</div>
                             </div> 
                     
                             <div class="city_zip_container">
                                 <label for="city">City</label>
                                 <input  type="text" name="city" class="city" id="city">
+                                <div class="city_error">City Required</div>
 
-                                <label for="zipcode">Zip Code</label>
-                                <input  type="number" name="zipcode" class="zipcode" id="zipcode">
+                                <label class="zipcode" for="zipcode">Zip Code</label>
+                                <input  type="tel" name="zipcode" class="zipcode" id="zipcode">
+                                <div class="zip_error">Zip Required</div>
                             </div>
                     
                             <div>
                                 <label for="country">Country</label>
                                 <input type="text" name="country" id="country">
+                                <div class="country_error">Country Required</div>
                             </div>
-                        </form> 
                     </div>
-                <div class="credit_card_info_container">
-                    <h1 class="contact_H1"><u>Credit Card info</u></h1>
-                    <label for="card_number">Card Number</label>
-                    <input type="number" name="card_number" id="card_number">
 
-                    <label for="card_holder">Cardholder Name</label>
-                    <input type="text" name="card_holder" id="card_holder">
+                    <div class="credit_card_info_container">
+                        <h1 class="contact_H1"><u>Credit Card info</u></h1>
 
-                    <label for="expire_date">Expire Date</label>
-                    <input type="number" name="expire_date" id="expire_date">
+                        <label for="card_number">Card Number</label>
+                        <input type="tel" name="card_number" id="card_number">
+                        <div class="cardNumber_error">Card Number Required</div>
 
-                    <label for="cvv">CVV</label>
-                    <input type="number" name="cvv" id="cvv">
+                        <label for="card_holder">Cardholder Name</label>
+                        <input type="text" name="card_holder" id="card_holder">
+                        <div class="cardName_error">Name of cardholder required</div>
 
-                    <button class="paynow_btn">Pay Now</button>
-                </div>
-            </div>
+                        <label for="expire_date">Expire Date</label>
+                        <input type="tel" name="expire_date" id="expire_date">
+                        <div class="expireDate_error">Expire date</div>
+
+                        <label for="cvv">CVV</label>
+                        <input type="tel" name="cvv" id="cvv">
+                        <div class="cvv_error">Enter cvv</div>
+
+                        <button class="paynow_btn" type="submit">Pay Now</button>
+                    </div>
+            </form>
         </main>
 
         <footer class="container_footer">
