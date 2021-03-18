@@ -487,7 +487,7 @@ label{
     background-color:rgb(51, 51, 51);
 }
 
-.pop_up{
+.popUp{
     border: 2px solid rgb(16, 158, 3);
     width: 400px;
     font-size: 1.2rem;
@@ -497,6 +497,7 @@ label{
     text-align: center;
     align-content: center;
     margin-top: 15px;
+    display: none;
 }
 
 
@@ -851,8 +852,13 @@ footer {
 }
 
 
-.cross_cart, .cross_favorite, .close_popup_cross {
-    margin-left: 100px;
+.cross_cart, .cross_favorite{
+    margin-left: 90px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close_popup_cross{
+    margin-left: 65px;
     text-decoration: none;
     cursor: pointer;
 }
