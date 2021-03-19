@@ -32,20 +32,19 @@
         <div class="message_sent">Your message has been sent <span class="check_mark">&#10004</span></div>
 
             <fieldset class="fieldset_contract">
-                    <form action="form-success.php" method="POST"> 
+                    <form class="contact_form"> 
 
-                        <label for="name">Name <span class="contact_error">*Enter your name</span></label>
+                        <label for="name">Name <span class="contact_name_error">*Enter your name</span></label>
                         <input type="name" name="name" placeholder="Your name" id="name"> 
 
-                        <label for="email">Email <span class="contact_error">*Please enter a valid email address</span></label>
+                        <label for="email">Email <span class="contact_email_error">*Please enter a valid email address</span></label>
                         <input type="email" name="email" placeholder="Email" id="email">
                         
-                        <label for="message"> Message <span class="contact_error">*Please enter a message </span></label>
+                        <label for="message"> Message <span class="contact_message_error">*Please enter your message </span></label>
                         <textarea id="message"></textarea>
                         
                         <button class="contact_sumbit">Send</button>
                     </form>
-
             </fieldset>
                     
                 <div class="contact_details_contrainer"> 
@@ -55,9 +54,9 @@
                     <p class="contact_info">Rainydays@.gmail.com</p>
                     <h4 class="contact_sub_heading">Sosial media</h4>
 
-                    <p class="contact_info"><i class="fab fa-facebook-square" style="text-decoration: underline;"> Facebook.com/rainydays</i></p>
-                    <p class="contact_info"><i class="fab fa-instagram" style="text-decoration: underline;">instagram.com/rainydays</i></p>
-                    <p class="contact_info"><i class="fab fa-twitter" style="text-decoration: underline;">twitter.com/rainydays</i></p>
+                    <p class="contact_info icon_hover"><i class="fab fa-facebook-square" style="text-decoration: underline;"> Facebook.com/rainydays</i></p>
+                    <p class="contact_info icon_hover"><i class="fab fa-instagram" style="text-decoration: underline;">instagram.com/rainydays</i></p>
+                    <p class="contact_info icon_hover"><i class="fab fa-twitter" style="text-decoration: underline;">twitter.com/rainydays</i></p>
                 </div>
         </div>
     </main>

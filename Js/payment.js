@@ -1,4 +1,4 @@
-const form = document.querySelector (".form_container");
+/*const form = document.querySelector (".form_container");
 
 const fullName = document.querySelector ("#full_name");
 const fullNameError = document.querySelector(".name_error");
@@ -88,7 +88,6 @@ function validateCheck(event){
 }
 
 
-
 form.addEventListener("submit", validateCheck);
 
 
@@ -98,9 +97,13 @@ function emailValidate(email){
     return emailPattern;
 }
 
-/*
-function addressValidate(address){
-    const addressRegEx = ^[a-zA-Z0-9\s,'-]*$
-    const addressPattern = RegExp.test(address)
+function checkLength(value, len){
+    if (value.trim().length > len) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+
 */

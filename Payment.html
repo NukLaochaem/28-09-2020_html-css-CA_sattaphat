@@ -41,21 +41,18 @@
                         </div>
                             
                             <div>
-                                <label for="name_fullname">Full name</label>
+                                <label for="name_fullname">Full name<span class="name_error">Full name Required</span></label>
                                 <input type="text" name="name" id="full_name">
-                                <div class="name_error">Full Name Required</div>
                             </div>
 
                             <div>
-                                <label for="address">Address</label>
+                                <label for="address">Address</label><span class="address_error">Address Required</span>
                                 <input type="text" name="address" id="address">
-                                <div class="address_error">Address Required</div>
                             </div> 
                     
                             <div class="city_zip_container">
-                                <label for="city">City</label>
+                                <label for="city">City <span class="city_error">City Name Required</span></label>
                                 <input  type="text" name="city" class="city" id="city">
-                                <div class="city_error">City Name Required</div>
 
                                 <label class="zipcode" for="zipcode">Zip Code</label>
                                 <input  type="tel" name="zipcode" class="zipcode" id="zipcode">

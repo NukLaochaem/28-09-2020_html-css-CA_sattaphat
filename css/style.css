@@ -62,6 +62,8 @@ section > img {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
+
+
 /*                                               HOME first page                                */
 
 
@@ -329,7 +331,7 @@ h1 {
     height: 30px;
     margin-left: 70px;
     margin-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 /*                                                    About us                                                 */
 
@@ -392,7 +394,7 @@ h1 {
 .fieldset_contract {
     font-size: 1rem;
     width: 0px;
-    height: 390px;
+    height: 420px;
     margin: 10px 0 0 65px;
     background-color: white;
     position: absolute;
@@ -418,6 +420,10 @@ h1 {
     font-size: 1.1rem;
     margin: 20px 0;
 }
+.icon_hover{
+    cursor: pointer;
+}
+
 .contact:hover{
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -442,7 +448,7 @@ textarea {
     height: 100px;
     width: 350px;
     margin: 12px 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 5px 10px;
     border: 1px solid;
     border-radius: 4px;
@@ -490,7 +496,7 @@ label{
     display: none;
 }
 
-.contact_error{
+.contact_name_error, .contact_email_error, .contact_message_error{
     color: red;
     font-size: 0.8rem;
     display: none;
@@ -663,6 +669,7 @@ label{
     display: flex;
     background: rgb(248, 222, 219);
     padding-bottom: 95px;
+    position: relative;
 }
 
 .contact_H1{
@@ -679,7 +686,7 @@ label{
 .billig_info {
     font-size: 1rem ;
     font-weight: 900;
-    margin: 50px 0 0 100px;
+    margin: 40px 0 0 100px;
     
 }
 #full_name, #address, #country {
@@ -708,8 +715,9 @@ label{
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin: 50px 0 0 240px;
+    position: absolute;
+    left: 750px;
+    top: 40px;
 
 
 }
@@ -886,6 +894,7 @@ footer {
     color: red;
     font-weight: 600;
     display: none;
+    font-size: 0.9rem;
 }
 
 
