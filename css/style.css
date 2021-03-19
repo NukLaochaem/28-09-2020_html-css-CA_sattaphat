@@ -293,6 +293,31 @@ h1 {
 .item_details_container{
     font-size: 0.8rem;
 }
+.succes_msg{
+    border: 2px solid rgb(16, 158, 3);
+    width: 400px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.favorite_msg{
+    border: 2px solid rgb(16, 158, 3);
+    width: 430px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    display: none;
+}
 
 
 
@@ -356,11 +381,13 @@ h1 {
 /*                                                     Contact                                           */
 
 .contact_container {
-    background: rgb(100,233,235);
-    background: linear-gradient(0deg, rgba(100,233,235,1) 6%, rgba(255,242,214,1) 100%);
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5); 
+    background: linear-gradient(to top, #ACB6E5, #74ebd5);
     position: relative;
-    height: 500px;
+    height: 550px;
 }
+
 
 .fieldset_contract {
     font-size: 1rem;
@@ -368,8 +395,8 @@ h1 {
     height: 390px;
     margin: 10px 0 0 65px;
     background-color: white;
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 60px;
     left: 30px;
 }
 .contact_sub_heading{
@@ -382,7 +409,7 @@ h1 {
     display: inline-block;
     position: absolute;
     left: 780px;
-    top: 20px;
+    top: 30px;
     margin: auto;
 }
 
@@ -395,8 +422,6 @@ h1 {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
-
-
 
 input[type=name] {
     width: 350px;
@@ -424,7 +449,7 @@ textarea {
     resize: none;
     
 }
-input[value=send] {
+.contact_sumbit {
     background-color: rgba(255, 255, 255, 0.295);
     width: 375px;
     padding: 10px 32px;
@@ -436,8 +461,8 @@ input[value=send] {
     cursor: pointer;
     font-weight: 600;
 }
-input[value=send]:hover{
-    background-color: rgb(192, 192, 192);
+.contact_sumbit:hover{
+    background-color: rgb(101, 168, 223);
 }
 
 
@@ -451,7 +476,25 @@ label{
     font-weight: bold;
     font-size: 1.1rem;
 }
+.message_sent{
+    border: 3px solid rgb(16, 160, 3);
+    background-color: white;
+    width: 400px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px 0 5px 0;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 10px;
+    display: none;
+}
 
+.contact_error{
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
 
 
 /*                                                     Favorite                                            */
@@ -510,7 +553,7 @@ label{
 }
 .yourbag:hover {
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
 }
 
 .jacket1_countainer, .jacket2_countainer {
@@ -728,7 +771,7 @@ footer {
 
 @media only screen and (max-width: 1187px) { 
 
-/*                                           Home page                     */
+/*                                           Home page mobile                     */
     input[type="search"] {
         display: none;
     }
@@ -736,7 +779,7 @@ footer {
         display: none;
     }
 
-/*                                          Products page                    */
+/*                                          Products page mobile                    */
 .products_container{
     width: 900px;
     height: 1100px;
@@ -758,7 +801,7 @@ footer {
     width: 180px;
 }
 
-/*                                      about us page                             */
+/*                                      about us page   mobile                          */
 .info1, .info2 {
     font-size: 1.3rem;
 }
@@ -766,7 +809,7 @@ footer {
 
 
 
-/*                                      Item page                                */ 
+/*                                      Item page         mobile                       */ 
     .model_item{
         font-size: 11px;
     }
@@ -791,7 +834,7 @@ footer {
 
 
 
-/*                                       Checkout page                            */
+/*                                       Checkout page     mobile                       */
 
     .checkout_container{
         margin-left: 750px;
@@ -816,43 +859,10 @@ footer {
 
 
 
-
-
-
-
-
-
-
 /*                 design  Update                   */
 
-.succes_msg{
-    border: 2px solid rgb(16, 158, 3);
-    width: 400px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 5px 0 5px 0;
-    margin: auto;
-    text-align: center;
-    align-content: center;
-    margin-top: 10px;
-    display: none;
-}
 
-.favorite_msg{
-    border: 2px solid rgb(16, 158, 3);
-    width: 430px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 5px 0 5px 0;
-    margin: auto;
-    text-align: center;
-    align-content: center;
-    margin-top: 10px;
-    display: none;
-}
-
-
-.cross_cart, .cross_favorite{
+.cross_cart, .cross_favorite, .check_mark{
     margin-left: 90px;
     text-decoration: none;
     cursor: pointer;
