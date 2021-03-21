@@ -7,6 +7,7 @@ const messageError = document.querySelector(".contact_message_error")
 
 const form = document.querySelector (".contact_form")
 const messageSent = document.querySelector (".message_sent")
+const closeMsg = document.querySelector (".check_mark")
 
 
 function validateContact (event){
@@ -16,28 +17,37 @@ function validateContact (event){
         nameError.style.display = "none";
     } else{
         nameError.style.display = "inline";
+        return;
     }
 
     if(validateEmail(email.value) === true){
         emailError.style.display = "none";
     } else {
-        emailError.style.display = "inline"
+        emailError.style.display = "inline";
+        return;
     }
 
     if(checkLength(contactMessage.value, 9) === true){
         messageError.style.display = "none";
     } else {
-        messageError.style.display = "inline"
+        messageError.style.display = "inline";
+        return;
     }
+    feedBack();
 }
 
 function feedBack(){
-    if (validateContact === true){
-        messageSent.style.display = "block"
-    }
+    messageSent.style.display = "block"
+    form.reset();
+}
+closeMsg.addEventListener("click", closeSentMsg);
+function closeSentMsg(){
+    messageSent.style.display =  "none"
 }
 
+
 form.addEventListener("submit", validateContact);
+
 
 
 function checkLength(value, len){
