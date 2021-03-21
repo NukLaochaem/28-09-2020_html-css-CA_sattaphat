@@ -1,6 +1,8 @@
 const addToBag = document.querySelector (".addToBag_itemPage");
 const succesMsg = document.querySelector (".succes_msg")
 
+const backToTop = document.querySelector ("#back_to_top")
+
 
 
 addToBag.addEventListener("click", message);

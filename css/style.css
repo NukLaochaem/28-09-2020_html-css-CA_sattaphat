@@ -11,7 +11,6 @@ font-style: normal;
 
 nav li {
     display: inline-block;
-    
 }
 
 nav a {
@@ -46,7 +45,7 @@ section > img {
 
 .far.fa-heart:hover{
     text-decoration: underline;
-    text-underline-offset: 4px;   
+    text-underline-offset: 4px;
 }
 .fas.fa-shopping-bag:hover{
     text-decoration: underline;
@@ -167,7 +166,7 @@ h1 {
     font-weight: 600;
     border-right: 1px solid;
     margin-top: 60px;
-    margin-left: 80px;
+    margin-left: 90px;
     width: 280px;
 }
 
@@ -198,7 +197,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    left: 400px;
+    left: 430px;
     top: 80px;
     text-decoration: none;
     color: black;
@@ -221,7 +220,7 @@ h1 {
 .model_item {
     font-size: 1rem;
     font-weight: 700;
-    margin: 70px 0px 70px 100px;
+    margin: 70px 0px 70px 130px;
 }
 
 .jacket_model2{
@@ -239,7 +238,7 @@ h1 {
 .rainjacket_details{
     width: 350px;
     position: absolute;
-    left: 740px ;
+    left: 770px ;
     bottom: 20px;
 }
 .red_rain_jacket{
@@ -270,11 +269,10 @@ h1 {
 .s, .m, .l,.xl{
     border: 1.3px solid;
     padding: 0 7px 0 7px;
-    cursor: pointer;
 }
-.s:hover, .m:hover, .l:hover,.xl:hover{
-    background-color: rgb(255, 205, 185);
-}
+/*.s:hover, .m:hover, .l:hover,.xl:hover{
+    background-color: rgb(250, 181, 154); 
+} */
 .addToBag_itemPage {
     font-size: 1rem;
     font-weight: 700;
@@ -283,14 +281,18 @@ h1 {
     margin: 16px 20px 0px 20px;
     background-color: rgb(238, 238, 238);
     cursor: pointer;
-    border: 1px solid;
+    border: 2px solid rgb(97, 96, 96);
 }
 .addToBag_itemPage:hover{
-    background-color: rgb(255, 205, 185);
+    background-color: rgb(252, 182, 155);
 }
 .item_heart:hover{
     color: red;
     cursor: pointer;
+}
+.item_heart{
+    text-decoration: none;
+    color: black;
 }
 .item_details_container{
     font-size: 0.8rem;
@@ -394,12 +396,12 @@ h1 {
 .fieldset_contract {
     font-size: 1rem;
     width: 0px;
-    height: 420px;
+    height: 400px;
     margin: 10px 0 0 65px;
     background-color: white;
     position: absolute;
     top: 60px;
-    left: 30px;
+    left: 60px;
 }
 .contact_sub_heading{
     font-size: 1.5rem;
@@ -410,8 +412,8 @@ h1 {
 .contact_details_contrainer {
     display: inline-block;
     position: absolute;
-    left: 780px;
-    top: 30px;
+    left: 800px;
+    top: 40px;
     margin: auto;
 }
 
@@ -500,6 +502,7 @@ label{
     color: red;
     font-size: 0.8rem;
     display: none;
+    margin-left: 10px;
 }
 
 
@@ -686,7 +689,7 @@ label{
 .billig_info {
     font-size: 1rem ;
     font-weight: 900;
-    margin: 40px 0 0 100px;
+    margin: 40px 0 0 180px;
     
 }
 #full_name, #address, #country {
@@ -716,7 +719,7 @@ label{
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 750px;
+    left: 800px;
     top: 40px;
 
 

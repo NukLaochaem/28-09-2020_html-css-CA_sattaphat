@@ -6,31 +6,48 @@ const contactMessage = document.querySelector("#message")
 const messageError = document.querySelector(".contact_message_error")
 
 const form = document.querySelector (".contact_form")
+const messageSent = document.querySelector (".message_sent")
 
 
 function validateContact (event){
     event.preventDefault();
 
-    if(contactNames.value.trim().length > 1){
+    if(checkLength(contactNames.value, 0) === true) {
         nameError.style.display = "none";
     } else{
-        nameError.style.display = "block";
+        nameError.style.display = "inline";
     }
 
     if(validateEmail(email.value) === true){
         emailError.style.display = "none";
     } else {
-        emailError.style.display = "block"
+        emailError.style.display = "inline"
     }
 
-    if(contactMessage.value.trim().length > 9){
+    if(checkLength(contactMessage.value, 9) === true){
         messageError.style.display = "none";
     } else {
-        messageError.style.display = "block"
+        messageError.style.display = "inline"
+    }
+}
+
+function feedBack(){
+    if (validateContact === true){
+        messageSent.style.display = "block"
     }
 }
 
 form.addEventListener("submit", validateContact);
+
+
+function checkLength(value, len){
+    if(value.trim().length > len){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 function validateEmail(email){
     const regEx = /\S+@\S+\.\S+/;
