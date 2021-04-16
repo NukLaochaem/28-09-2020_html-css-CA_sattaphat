@@ -12,6 +12,9 @@ const modelItem = document.querySelector(".model_item")
 const itemName = document.querySelector(".red_rain_jacket")
 const itemPrice = document.querySelector(".red_rain_jacket_price")
 const itemDetails = document.querySelector(".item_details_container")
+
+
+
 console.log(itemDetails);
 async function callApi(){
     try{
@@ -23,6 +26,7 @@ async function callApi(){
         itemName.innerHTML += `${bestSellerItem.name}`;
         itemPrice.innerHTML += `${bestSellerItem.prices.price} $`;
         itemDetails.innerHTML += `${bestSellerItem.description}`;
+
             
     } catch (error){
         console.log(error);
