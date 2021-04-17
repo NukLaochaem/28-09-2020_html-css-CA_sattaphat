@@ -1,6 +1,9 @@
-const url = "http://nuklaochaem.one/rainydays/wordpress-5.7/wordpress/wp-json/wc/store/products/";
+const wordPressUrl = "http://nuklaochaem.one/rainydays/wordpress-5.7/wordpress/wp-json/wc/store/products/";
+const corsFix = "https://noroffcors.herokuapp.com/";
+const url = corsFix + wordPressUrl;
 
 const bestSellerContainer = document.querySelector(".container_bestsell");
+const indexLoading = document.querySelector(".index_loading")
 
 async function api(){
     try{
@@ -8,26 +11,37 @@ async function api(){
         const bestSeller = await response.json(response);
         
         console.log(bestSeller);
+
+        indexLoading.innerHTML = "";
         for(let i = 0; i < bestSeller.length; i++){
             if(i === 5){
                 break;
             }
         console.log(bestSeller[i]);
-
-        bestSellerContainer.innerHTML += `  <div class="best_seller_item">
+        bestSellerContainer.innerHTML += ` <div class="best_seller_item">
                                                 <a class="best_Seller_Link" href="bestseller.html?id=${bestSeller[i].id}">
                                                 <img class="best_seller_img" src="${bestSeller[i].images[0].src}"></img>
                                                 <p>${bestSeller[i].name} ${bestSeller[i].prices.price} ${bestSeller[i].prices.currency_symbol}</p>
                                                 </a>
-                                                
                                             </div>`
-
         }
     } catch (error){
         console.log(error);
+        indexLoading.innerHTML +=`<h4 class="loading_error">Error! Cant not find the items you were looking for </h4>`
     }
 }
 api();
+
+
+// fikse loading og error msg på index
+
+// kanskje add to cart og favorite på bestseller
+
+//footer
+
+//lever / fix cors
+
+
 
 
 /*

@@ -118,8 +118,9 @@ h1 {
 
 .top_sellers{
     margin-left: 20px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
-
 
 .container_bestsell{
     font-size: 1.2rem;
@@ -142,6 +143,33 @@ h1 {
 .best_seller_item:hover{
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+
+.index_loading{
+    margin-left: 50px;
+    font-size: 1.4rem;
+}
+.index_loading {
+    content: '.';
+    animation: dots 1s steps(5, end) infinite;
+}
+    @keyframes dots {0%, 20% {
+    text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    40% {
+    color: white;
+    text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    60% {
+    text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+    text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 white;}
 }
 
 
@@ -222,11 +250,39 @@ h1 {
 }
 .middel_container{
     flex: 10%;
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+.middel_container{
+    content: '.';
+    animation: dots 1s steps(5, end) infinite;
+}
+@keyframes dots {0%, 20% {
+    text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    40% {
+    color: white;
+    text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    60% {
+    text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+    text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 white;}
+}
+
+.bestSellerJacket{
+    width: 350px;
+    margin-left: 20px;
 }
 
 .model_item {
-    margin: 50px 0 0 100px;
-
+    margin: 70px 0 0 120px;
 }
 
 /*.jacket_model2{
@@ -298,7 +354,7 @@ h1 {
     color: black;
 }
 .item_details_container{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left: 80px;
     margin-top: 50px;
 }
@@ -326,6 +382,9 @@ h1 {
     align-content: center;
     margin-top: 10px;
     display: none;
+}
+.loading_error{
+    color: red;
 }
 
 
