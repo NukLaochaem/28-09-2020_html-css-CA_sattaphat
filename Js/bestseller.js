@@ -4,7 +4,9 @@ const getJacketID = params.get("id")
 
 
 
-const jacketUrl = "http://nuklaochaem.one/rainydays/wordpress-5.7/wordpress/wp-json/wc/store/products/" + getJacketID;
+const IdUrl = "http://nuklaochaem.one/rainydays/wordpress-5.7/wordpress/wp-json/wc/store/products/"+ getJacketID;
+const corsFix = "https://noroffcors.herokuapp.com/";
+const jacketUrl = corsFix + IdUrl;
 
 console.log(jacketUrl)
 
