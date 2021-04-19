@@ -39,8 +39,6 @@ api();
 
 //footer
 
-//lever / fix cors
-
 
 
 
