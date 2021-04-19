@@ -52,10 +52,15 @@ async function callApi(){
 
     } catch (error){
         console.log(error);
-        modelItem.innerHTML += `<h4 class="loading_error">Error. Cannot find the product you were looking for.</h4>`;
+        modelItem.innerHTML += `<h4 class="loading_error">An error occurred. Cannot find the product you were looking for.</h4>`;
+        loader.style.display = "none" ;
     }
 }
 callApi();
+
+
+
+
 
 
 

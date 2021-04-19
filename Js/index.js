@@ -27,42 +27,9 @@ async function api(){
         }
     } catch (error){
         console.log(error);
-        indexLoading.innerHTML +=`<h4 class="loading_error">Error! Cant not find the items you were looking for </h4>`
+        bestSellerContainer.innerHTML +=`<h4 class="loading_error">An error occurred, Cannot find the items. Please try again later </h4>`
     }
 }
 api();
-
-
-// fikse loading og error msg på index
-
-// kanskje add to cart og favorite på bestseller
 
 //footer
-
-
-
-
-/*
-async function api(){
-    try{
-
-
-        cardContainer.innerHTML = "";
-        for(let i = 0; i < pokemon.length; i++){
-            if(i === 12){
-                break;
-            }
-            //console.log(pokemon[i]);
-            cardContainer.innerHTML += `<div class="card_holder">
-                                            <h3>${pokemon[i].name} - HP ${pokemon[i].hp}  </h3>
-                                            <a href="details.html?name=${pokemon[i].name}">
-                                            <img src="${pokemon[i].images.small}"></img></a>
-                                        </div>`;
-        }                               
-    } catch (error) {
-        console.log(error);
-        cardContainer.innerHTML = `<h4 class="error">Error! Something went wrong! Error has occurred.  </h4>`;
-    }
-}
-api();
-*/
