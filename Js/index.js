@@ -11,7 +11,6 @@ async function api(){
         const bestSeller = await response.json(response);
         
         console.log(bestSeller);
-
         indexLoading.innerHTML = "";
         for(let i = 0; i < bestSeller.length; i++){
             if(i === 5){
