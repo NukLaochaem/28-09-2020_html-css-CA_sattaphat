@@ -36,6 +36,8 @@ function validateContact (event){
     feedBack();
 }
 
+form.addEventListener("submit", validateContact);
+
 function feedBack(){
     messageSent.style.display = "block"
     form.reset();
@@ -45,8 +47,6 @@ function closeSentMsg(){
     messageSent.style.display =  "none"
 }
 
-
-form.addEventListener("submit", validateContact);
 
 
 
@@ -64,13 +64,6 @@ function validateEmail(email){
     const emailPattern = regEx.test(email);
     return emailPattern;
 }
-
-
-
-
-
-
-
 
 
 
