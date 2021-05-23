@@ -47,9 +47,6 @@ async function callApi(){
                                     <a href="#back_to_top"><button class="addToBag_itemPage">ADD TO BAG</button></a>
                                     <a href="#back_to_top"><i class="fas fa-heart item_heart"></i></a>
                                     `;
-        
-            
-
     } catch (error){
         console.log(error);
         modelItem.innerHTML += `<h4 class="loading_error">An error occurred. Cannot find the product you were looking for.</h4>`;
