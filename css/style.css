@@ -806,98 +806,33 @@ footer {
 
 
 body{
-    background-color: white;
+    background-color: green;
 }
 
 
 
-
-
-
-
-
-
-
-@media only screen and (min-width: 520px) { 
-    /*                                            nav   tablet                           */
+@media only screen and (min-width: 520px) {
     body{
-        background-color: blue;
-    }
-    .topnav {
-        margin: auto;
-    }
-    nav li {
-        display: inline-block;
+        background-color: yellow;
     }
 
-    nav a {
-        columns: #3b3b3b;
-        text-decoration: none;
-        font-size: 1.3em;
-        font-weight: bold;
-        color: black ;
-        margin: 0 35px;
-    }
-
-    input[type=search] {
-        width: 180px;
-        height: 25px;
-        font-size: 1.2rem;  
-        border-radius: 4px; 
-        margin: 0 50px 0rem;
-    }
-    .products, .aboutus, .contact, .favorite, .yourbag, input[type=search] {
-        position: relative;
-        bottom: 18px
-    }
-    #hamburger-menu{
-        display: none;
-    }
-    .hamburger-label{
-        display: none;
-    }
-    section > img {
-        width: 100%;
-    }
-
-    .far.fa-heart:hover{
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-    .fas.fa-shopping-bag:hover{
-        text-decoration: underline;
-        text-underline-offset: 4px; 
-    }
-
-    .current {
-        text-decoration: underline;
-        text-underline-offset: 4px;
-        font-size: 1.2rem;
-    }
-    .current_nav2{
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-
-    /*                                           Home page tablet                     */
-    
-    /*                                              item page tablet                             */
-    /*                                              about us tablet                              */
-    /*                                              Contact tablet                              */
-    /*                                              favorite tablet                           */
-    /*                                              your bag tablet                               */
-    /*                                               payment tablet                              */
-    /*                                              footer tablet                               */
+        /*                                            nav   tablet                           */
+        /*                                           Home page tablet                     */
+        /*                                              item page tablet                             */
+        /*                                              about us tablet                              */
+        /*                                              Contact tablet                              */
+        /*                                              favorite tablet                           */
+        /*                                              your bag tablet                               */
+        /*                                               payment tablet                              */
+        /*                                              footer tablet                               */
 }
 
 
+    /*                                            DESKT TOP                            */
+@media only screen and (min-width: 980px) {
 
-
-
-@media only screen and (min-width: 980px){
-    /*                                                 nav desktop                         */
     body{
-        background-color: firebrick;
+        background-color: red;
     }
     .topnav {
         margin: auto;
@@ -993,7 +928,6 @@ body{
         text-decoration: underline;
         opacity: 1;
     }
-    
     
     /*                                              First page TOP SELLERS                                 */
     
@@ -1230,59 +1164,59 @@ body{
         font-size: 1rem;
     }
     /*                                                 NAV2 meny bar                                           */
-.nav2 {
-    border-bottom: 1px solid rgb(112, 108, 108);
-    font-size: 0.9rem;
-    font-weight: 500;
-    height: 30px;
-    margin-left: 70px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-}
-/*                                                    About us  desktop                                           */
+    .nav2 {
+        border-bottom: 1px solid rgb(112, 108, 108);
+        font-size: 0.9rem;
+        font-weight: 500;
+        height: 30px;
+        margin-left: 70px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+    /*                                                    About us  desktop                                           */
 
-.container_aboutus {
-    background: radial-gradient(circle, rgba(252,171,134,1) 0%, rgba(255,155,155,1) 100%);
-    height: 400px;
-    position: relative;
-    bottom: 15px;
-}
-.aboutus:hover{
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-.mid_text, .mid_text2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: whitesmoke;
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 100px;
-    margin-left: 90px;
-}
+    .container_aboutus {
+        background: radial-gradient(circle, rgba(252,171,134,1) 0%, rgba(255,155,155,1) 100%);
+        height: 400px;
+        position: relative;
+        bottom: 15px;
+    }
+    .aboutus:hover{
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    .mid_text, .mid_text2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: whitesmoke;
+        text-decoration: underline;
+        text-align: center;
+        padding-top: 100px;
+        margin-left: 90px;
+    }
 
-.mid_text2{
-    padding-top: 40px;
-}
+    .mid_text2{
+        padding-top: 40px;
+    }
 
-.container_P {
-    font-size: 1rem;
-    font-weight: 700;
-    display: flex;
-    margin-bottom: 30px;
-    display: flex;
-}
-.info1::first-letter, .info2::first-letter{
-    font-size: 2rem;
-}
+    .container_P {
+        font-size: 1rem;
+        font-weight: 700;
+        display: flex;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    .info1::first-letter, .info2::first-letter{
+        font-size: 2rem;
+    }
 
-.info1 {
-    margin: 0 30px 0 40px;
-}
+    .info1 {
+        margin: 0 30px 0 40px;
+    }
 
-.info2 {
-    margin: 0 0 0 10px; 
-}
+    .info2 {
+        margin: 0 0 0 10px; 
+    }
     /*                                              Contact desktop                              */
     
     .contact_container {
@@ -1656,6 +1590,4 @@ body{
     footer {
         display: inline;
     }
-    
-
 }
