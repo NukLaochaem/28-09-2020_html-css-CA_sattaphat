@@ -1,4 +1,12 @@
+html {
+    box-sizing: border-box;
+}
 
+*, *:before,*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 html {
 font-family: clone-rounded-latin, sans-serif;
 font-weight: 100;
@@ -10,104 +18,52 @@ a {
     text-decoration: none;
 }
 
-
 /*                                             NAV topmeny bar                                                  */
-
-.topnav {
-    margin: auto;
+.logo_container{
+    position: relative;
+    text-align: center;
 }
-nav li {
-    display: inline-block;
+.hamburger{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    padding: 10px;
+    cursor: pointer;
 }
 
-nav a {
-    columns: #3b3b3b;
+.top_nav{
+    background-color: rgb(228, 228, 228);
+    opacity: 0.9;
+    position: absolute;
+    width: 200px;
+    text-align: center;;
+    display: none;
+}
+
+ul li {
     text-decoration: none;
     font-size: 1.3em;
     font-weight: bold;
     color: black ;
-    margin: 0 35px;
+    padding: 10px 0;
 }
-
-input[type=search] {
-    width: 180px;
-    height: 25px;
-    font-size: 1.2rem;  
-    border-radius: 4px; 
-    margin: 0 50px 0rem;
-}
-.products, .aboutus, .contact, .favorite, .yourbag, input[type=search] {
-    position: relative;
-    bottom: 18px
-}
-#hamburger-menu{
+.search_bar_nav, .favorite_nav, .yourbag_nav{
     display: none;
 }
-.hamburger-label{
-    display: none;
-}
-section > img {
-    width: 100%;
-}
 
-.far.fa-heart:hover{
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-.fas.fa-shopping-bag:hover{
-    text-decoration: underline;
-    text-underline-offset: 4px; 
-}
-
-.current {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    font-size: 1.2rem;
-}
-.current_nav2{
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
 
 /*                                               HOME first page                                */
+.landing_img{
+    background-image: url(/images/firstpage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0px;
+}
 
 .slogan-block {
-    position: absolute;
-    left: 800px;
-    top: 270px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-h1 {
-    position: relative;
-    right: 40px;
-    font-size: 2.5rem;
-}
-
-.shop_btn {
-    padding: 14px 23px;
-    margin-top: 1rem;
-    border-radius: 12px;
-    border: 2px;
-    font-size: 0.7em;
-    transition-duration: 0.4s;
-    font-weight: bolder;
-    text-decoration: none;
-    color: white;
-    background-color:rgb(37, 37, 37);
-    opacity: 0.9;
-    cursor: pointer;
-    position: relative;
-    right: 15px;
-    box-shadow: 5px 5px 5px rgb(54, 54, 54);
-    text-underline-offset: 3px;
-}
-.shop_btn:hover {
-    background-color: rgb(19, 19, 19);
-    text-decoration: underline;
-    opacity: 1;
+    display: none;
 }
 
 
@@ -122,9 +78,6 @@ h1 {
 .container_bestsell{
     font-size: 1.2rem;
     font-weight: 700;
-    display: flex;
-    flex: center;
-
 }
 .best_seller_item {
     flex-grow: 1;
@@ -805,16 +758,11 @@ footer {
 
 
 
-body{
-    background-color: green;
-}
 
 
 
 @media only screen and (min-width: 520px) {
-    body{
-        background-color: yellow;
-    }
+
 
         /*                                            nav   tablet                           */
         /*                                           Home page tablet                     */
@@ -831,9 +779,6 @@ body{
     /*                                            DESKT TOP                            */
 @media only screen and (min-width: 980px) {
 
-    body{
-        background-color: red;
-    }
     .topnav {
         margin: auto;
     }

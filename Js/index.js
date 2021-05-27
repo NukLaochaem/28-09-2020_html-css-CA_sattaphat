@@ -1,4 +1,4 @@
-const wordPressUrl = "http://nuklaochaem.one/rainydays/wordpress-5.7/wordpress/wp-json/wc/store/products/";
+const wordPressUrl = "http://nuklaochaem.one/Rainydays/wp-json/wc/store/products/";
 const corsFix = "https://noroffcors.herokuapp.com/";
 const url = corsFix + wordPressUrl;
 
@@ -31,4 +31,25 @@ async function api(){
 }
 api();
 
-//footer
+
+
+
+const hamburger = document.querySelector(".fa-bars");
+const topNav = document.querySelector(".top_nav");
+
+hamburger.addEventListener("click", ()=>{
+    if(topNav.style.display === "block"){
+        topNav.style.display = "none"
+    } else {
+        topNav.style.display = "block";
+    };
+});
+
+
+
+
+
+const navLogo = document.querySelector(".nav_logo");
+navLogo.addEventListener("click", ()=>{
+    window.location= "/"
+});

@@ -3,7 +3,7 @@ const params = new URLSearchParams(queryString);
 const getJacketID = params.get("id")
 
 const corsFix = "https://noroffcors.herokuapp.com/";
-const IdUrl = "http://nuklaochaem.one/rainydays/wordpress-5.7/wordpress/wp-json/wc/store/products/"+ getJacketID;
+const IdUrl = "http://nuklaochaem.one/Rainydays/wp-json/wc/store/products/"+ getJacketID;
 const jacketUrl = corsFix + IdUrl;
 
 console.log(jacketUrl)
