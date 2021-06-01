@@ -3,7 +3,7 @@
     <head>
         <title>Jacket</title>
         <meta name="Description"    content="Jacket">
-        <meta name="viewpoint"  content="width=device-width, inital-scale=1"> 
+        <meta name="viewport"  content="width=device-width, inital-scale=1"> 
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/asq2lpq.css">
         <script src="https://kit.fontawesome.com/95eeee5aab.js" crossorigin="anonymous"></script>
@@ -11,24 +11,30 @@
 
     <body>
         <header>
-            <nav class="topnav">
-                <ul id="back_to_top">
-                    <li><a href="index.html"> <img src="images/RainyDays_Logo(1).png" alt="Rainydays_logo"></a></li>
-                    <li class="products"><a href="Products.html">Products</a></li>
-                    <li class="aboutus"><a href="Aboutus.html">About us</a></li>
-                    <li class="contact"><a href="Contract.html">Contact</a></li>
+            <div class="logo_container">
+                <div class="hamburger"><i class="fas fa-bars fa-2x"></i></div>
+                <img class="nav_logo" src="/images/RainyDays_Logo(1).png" alt="rainyday logo">
+                <div class="yourbag_mobile"><a href="Yourbag.html"><i class="fas fa-shopping-bag fa-lg"></i></a></div>
+            </div>
+
+
+            <nav >
+                <ul class="top_nav"> 
+                    <li class="home_nav"><a href="index.html">Home</a></li>
+                    <li class="products_topnav"><a href="Products.html">Products</a></li>
+                    <li class="aboutus_nav"><a href="Aboutus.html">About us</a></li>
+                    <li class="contact_nav"><a href="Contract.html">Contact</a></li>
                     <li><form action="/"></form>
-                    <li><input type="Search" placeholder="Search.." name="search"></li>
-                    <li class="favorite"><a href="Favourite.html"><i class="far fa-heart"></i></a></li>
-                    <li class="yourbag"><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="search_bar_nav"><input type="Search" placeholder="Search.." name="search"></li>
+                    <li class="yourbag_nav"><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
                 </ul>
             </nav>
         </header>
 
 
-        <div class="products_nav">
+        <div class="bestseller_products_nav">
             <ul>
-                <li class="products" ><a href="Products.html">Products</a></li>
+                <li class="products" ><a href="Products.html">Jackets</a></li>
                 <li class="products"><a href="Products.html">Men's</a></li>
                 <li class="products"><a href="Products.html">Womens</a></li>
                 <li class="products"><a href="Products.html">Kids</a></li>
@@ -36,54 +42,32 @@
                 <li class="products"><a href="Products.html">More</a></li>
             </ul>
         </div>
-
-
-        <div class="succes_msg">The item has been added to cart<span class="cross_cart">&#10006</span></div>
-        <div class="favorite_msg">The item has been added to favorite<span class="cross_favorite">&#10006</span></div>
         
-
+        
         <main>
             <div class="item_container">
-
                 <div class="left_container">
-                    <img class="model_item" src="/images/model_jacket.jpg" alt="A model wearing red jacket">
-<!--                <img class="jacket_model2" src="/images/model_jacket2.jpg" alt="red jacket from front">
-                    <img class="jacket_model3" src="/images/model_jacket3.jpg" alt="red jacket from behind">-->
+                    <div class="model_item"></div>
                     <div class="item_details_container">
-                        <p> Details: Regular lit</p>
-                        <p>-100% ployester, Wind resistant shell and water profed</p>
-                        <p>-2 lower zipper pakcet, 2upper zipper pocket, 1 right sleeve pocket</p>
-                        <p>-5 layer to insure warmth</p>
                     </div> 
                 </div>
     
+                <div class="middel_container">Loading...</div>
     
                 <div class="rainjacket_details">
-                    <h1 class="red_rain_jacket"> Red Rain jacket</h1>
-                    <p class="red_rain_jacket_price"> $ 99.00</p>
-                    <p class="text_details">Availability: in stock</p>
-                    <p class="text_details">Product code: AN69433 - Premium</p>
-                    <p class="size_detail">Size: 
-                        <span class="s active_s">S</span> 
-                        <span class="m">M</span> 
-                        <span class="l">L</span> 
-                        <span class="xl">XL</span>
-                    </p>
-                    <span style="font-size: 1.7rem;">1 x</span>
-                    <a href="#back_to_top"><button class="addToBag_itemPage">ADD TO BAG</button></a>
-                    <a href="#back_to_top"><i class="fas fa-heart item_heart"></i></a>
-                    <p class="text_details">Colors:</p>
-                    <div class="jacket_colors" >
-                        <img src="/images/jacket_yellow.jpg" alt="Jacket in yellow">
-                        <img src="/images/jacket_black.jpg" alt="jacket in black">
-                        <img src="/images/jacket_blue.jpg" alt="jacket in blue">
-                    </div>
+                    <h1 class="red_rain_jacket"></h1>
+                    <p class="red_rain_jacket_price"></p>
+                    <p class="text_details"></p>
+                    <p class="text_details"></p>
+                    <p class="size_detail"></p>
                 </div>
+
+                <div class="item_description_container"></div> 
+                
             </div>
         </main>
-    <footer class="container_footer">
-        <p>Copyright &copy; 2020 RainyDays</p> 
-    </footer>
+        
+    <footer class="container_footer">Copyright &copy; 2020 RainyDays</footer>
 
         <script src="js/item.js"></script>
     </body>

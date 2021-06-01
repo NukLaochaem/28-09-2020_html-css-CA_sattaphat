@@ -104,6 +104,23 @@ function checkLength(value, len){
         return false;
     }
 }
-
-
 */
+
+const hamburger = document.querySelector(".fa-bars");
+const topNav = document.querySelector(".top_nav");
+
+hamburger.addEventListener("click", ()=>{
+    if(topNav.style.display === "block"){
+        topNav.style.display = "none"
+    } else {
+        topNav.style.display = "block";
+    }
+});
+
+
+const navLogo = document.querySelector(".nav_logo");
+navLogo.addEventListener("click", ()=>{
+    window.location= "/"
+});
+
+

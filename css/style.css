@@ -22,6 +22,7 @@ a {
 .logo_container{
     position: relative;
     text-align: center;
+    box-shadow: 0px 2px 8px 5px rgba(0, 0, 0, 0.3);
 }
 .hamburger{
     position: absolute;
@@ -30,26 +31,33 @@ a {
     padding: 10px;
     cursor: pointer;
 }
+.yourbag_mobile{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    padding: 10px;
+}
 
 .top_nav{
     background-color: rgb(228, 228, 228);
-    opacity: 0.9;
     position: absolute;
-    width: 200px;
+    width: 70%;
     text-align: center;;
     display: none;
+    z-index: 1;
 }
 
 ul li {
-    text-decoration: none;
     font-size: 1.3em;
-    font-weight: bold;
+    font-weight: 500;
     color: black ;
     padding: 10px 0;
 }
 .search_bar_nav, .favorite_nav, .yourbag_nav{
     display: none;
 }
+
+
 
 
 /*                                               HOME first page                                */
@@ -59,7 +67,7 @@ ul li {
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
-    padding: 150px 0px;
+    padding: 140px 0px;
 }
 
 .slogan-block {
@@ -70,106 +78,82 @@ ul li {
 /*                                              First page TOP SELLERS                                 */
 
 .top_sellers{
-    margin-left: 20px;
+    padding: 20px;
     text-decoration: underline;
     text-underline-offset: 4px;
 }
 
 .container_bestsell{
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 .best_seller_item {
-    flex-grow: 1;
     text-align: center;
-    text-decoration: none;
-    color: black;
+    padding: 20px 0;
 }
 
 .best_seller_img{
     width: 190px;
 }
 
-.best_seller_item:hover{
-    text-decoration: underline;
-    text-underline-offset: 4px;     
-}
-
-
-
 
 /*                                                  PRODUCTS                                         */
-.products:hover{
-    text-decoration: underline;
-    text-underline-offset: 3px;
+.product_img{
+    max-width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }
-.product_container{
-    position: relative;
-    height: 850px;
-    top: -15px;
+.product_text{
+    padding: 10px;
 }
-.productslist_Container {
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-right: 1px solid;
-    margin-top: 60px;
-    margin-left: 90px;
-    width: 280px;
-}
-
-.products_bar:hover{
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.products_nav {
-    border-bottom: 1px solid rgb(112, 108, 108);
-    font-size: 0.9rem;
+.product_h1{
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-left: 70px ;
-    margin-top: 30px;
 }
 
-.Sorting {
-    position: absolute;
-    left: 950px;
-    width: 155px;
-    top: 0px;
+.filter_sort {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: end;
 }
-
-.products_container {
-    font-size: 1.2  rem;
-    font-weight: 600;
-    width: 690px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 430px;
-    top: 80px;
-    text-decoration: none;
-    color: black;
+.products_nav {
+    font-size: 0.9rem;
+}
+.bestseller_products_nav{
+    display: none;
+}
+.products_bar{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    display: none;
+    font-weight: 400;
+    padding: 10px;
     
 }
-.jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9 { 
-    padding: 0 37px;
-    margin: auto;
-    text-decoration: none;
-    color: black;
+.productslist_container {
+    display: none;
+}
+.products_container {
+    text-align: center;
 }
 
+.product_jacket { 
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 20px;
+}
+.product_jacket img {
+    padding-bottom: 20px;
+}
+.product_name{
+    font-weight: 600;
+}
+
+.product_price{
+    color: #222
+}
 /*                                                   Item page                                       */
-
-.item_container{
-    display: flex;
-}
-.left_container{
-    flex: 45%;
-}
-.middel_container{
-    flex: 10%;
-    font-size: 1.7rem;
-    margin-top: 20px;
-}
 .middel_container{
     content: '.';
     animation: dots 1s steps(5, end) infinite;
@@ -193,50 +177,45 @@ ul li {
         .5em 0 0 white;}
 }
 
-.bestSellerJacket{
-    width: 350px;
-    margin-left: 20px;
+.middel_container{
+    flex: 10%;
+    font-size: 1.7rem;
+    margin: 20px 0px;
+    text-align: center;
 }
-
 .model_item {
-    margin: 70px 0 0 120px;
+    margin: auto;
+    text-align: center;
 }
-
-/*.jacket_model2{
-    margin-left: 20px;
+.bestSellerJacket{
+    width: 70%;
+    margin-top: 40px;
 }
-
-.jacket_model3 {
-    margin-left: 100px;
-}*/
 
 .rainjacket_details{
-    flex: 45%;
-    margin-top: 40px ;
+    padding: 20px ;
 }
 .red_rain_jacket{
     font-size: 1.3rem;
-    font-weight: 900;
+    font-weight: 500;
     text-decoration: underline;
-    margin-left: 38px;
     text-underline-offset: 3px;
 }
 .red_rain_jacket_price{
     font-size: 1.3rem;
-    font-weight: 900;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    font-weight: 200;
+    margin-bottom: 20px;
 }
 
 .text_details, .text_detail {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 
 .size_detail {
     font-size: 1.3rem;
-    font-weight: 900;
+    font-weight: 400;
     margin: 40px 0;
 }
 
@@ -245,35 +224,21 @@ ul li {
     padding: 0 7px 0 7px;
 }
 
-/*.s:hover, .m:hover, .l:hover,.xl:hover{
-    background-color: rgb(250, 181, 154); 
-} */
-
 .addToBag_itemPage {
-    font-size: 1rem;
-    font-weight: 700;
-    width: 150px;
+    font-weight: 600;
+    width: 100%;
     height: 38px;
-    margin: 16px 20px 0px 20px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
     cursor: pointer;
-    border: 2px solid rgb(97, 96, 96);
-}
-.addToBag_itemPage:hover{
-    background-color: rgb(252, 182, 155);
-}
-.item_heart:hover{
-    color: red;
-    cursor: pointer;
+    margin: auto;
 }
 .item_heart{
-    text-decoration: none;
-    color: black;
+    display: none;
 }
-.item_details_container{
-    font-size: 1rem;
-    margin-left: 80px;
-    margin-top: 50px;
+.item_description_container{
+    padding: 20px;
 }
 .succes_msg{
     border: 2px solid rgb(16, 158, 3);
@@ -305,37 +270,23 @@ ul li {
 }
 
 
-
-/*                                                 NAV2 meny bar                                           */
-.nav2 {
-    border-bottom: 1px solid rgb(112, 108, 108);
-    font-size: 0.9rem;
-    font-weight: 500;
-    height: 30px;
-    margin-left: 70px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-}
 /*                                                    About us                                                 */
 
 .container_aboutus {
-    background: radial-gradient(circle, rgba(252,171,134,1) 0%, rgba(255,155,155,1) 100%);
-    height: 400px;
+    background-image: url(/images/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0px;
     position: relative;
-    bottom: 15px;
-}
-.aboutus:hover{
-    text-decoration: underline;
-    text-underline-offset: 3px;
 }
 .mid_text, .mid_text2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: whitesmoke;
+    font-size: 1.6rem;
     text-decoration: underline;
+    text-underline-offset: 3px;
     text-align: center;
-    padding-top: 100px;
-    margin-left: 90px;
+    font-weight: 700;
 }
 
 .mid_text2{
@@ -343,125 +294,77 @@ ul li {
 }
 
 .container_P {
-    font-size: 1rem;
-    font-weight: 700;
-    display: flex;
-    margin-bottom: 30px;
-    display: flex;
+    font-weight: 400;
+    padding: 30px;
 }
 .info1::first-letter, .info2::first-letter{
     font-size: 2rem;
 }
 
-.info1 {
-    margin: 0 30px 0 40px;
-}
-
-.info2 {
-    margin: 0 0 0 10px; 
-}
-
 /*                                                     Contact                                           */
 
 .contact_container {
-    background: #74ebd5;
-    background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5); 
-    background: linear-gradient(to top, #ACB6E5, #74ebd5);
-    position: relative;
-    height: 550px;
+    background-color: rgb(235, 245, 253);
+    padding: 20px;
+}
+.form_contact_container{
+    padding: 15px;
+}
+.contact_form{
+    display: block;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow:         6px 6px 18px 0px rgba(50, 50, 50, 0.54);
+}
+.contact_form label{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 10px ;
+    border: solid 1px rgb(118, 118, 118);
+    margin: 10px 0;
+}
+textarea{
+    height: 150px;
+}
+
+input[type=text], textarea:focus{
+    outline: none;
+}
+#contact_sumbit {
+    background-color: rgba(255, 255, 255, 0.295);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border: solid 1px rgb(118, 118, 118);
 }
 
 
-.fieldset_contract {
-    font-size: 1rem;
-    width: 0px;
-    height: 400px;
-    margin: 10px 0 0 65px;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    left: 60px;
+.contact_details_contrainer {
+    text-align: center;
+    padding: 20px;
 }
 .contact_sub_heading{
     font-size: 1.5rem;
+    font-weight: 500;
     text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.contact_details_contrainer {
-    display: inline-block;
-    position: absolute;
-    left: 800px;
-    top: 40px;
-    margin: auto;
+    text-underline-offset: 4px;
 }
 
 .contact_info{
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin: 20px 0;
-}
-.icon_hover{
-    cursor: pointer;
-}
-
-.contact:hover{
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-input[type=name] {
-    width: 350px;
-    padding: 5px 10px;
-    margin: 8px 0 8px 0;
-    font-size: 1rem;
-    border-radius: 4px;
-}
-
-input[type=email] {
-    width: 350px;
-    padding: 5px 10px;
-    margin: 8px 0;
-    font-size: 1rem;  
-    border-radius: 4px;    
-}
-textarea {
-    height: 100px;
-    width: 350px;
-    margin: 12px 0;
+    font-weight: 400;
     font-size: 1.2rem;
-    padding: 5px 10px;
-    border: 1px solid;
-    border-radius: 4px;
-    resize: none;
-    
-}
-.contact_sumbit {
-    background-color: rgba(255, 255, 255, 0.295);
-    width: 375px;
-    padding: 10px 32px;
-    border-radius: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin-top: 20px;
-    cursor: pointer;
-    font-weight: 600;
-}
-.contact_sumbit:hover{
-    background-color: rgb(101, 168, 223);
-}
-
-
-h3 {
-    font-size: 1.5rem;
-    margin: 20px 0 50px 0;
-}
-
-label{
-    display: block;
-    font-weight: bold;
-    font-size: 1.1rem;
+    margin: 20px 0;
 }
 .message_sent{
     border: 3px solid rgb(16, 160, 3);
@@ -469,12 +372,15 @@ label{
     width: 400px;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 5px 0 5px 0;
+    padding: 6px 0;
     position: relative;
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
     top: 10px;
     display: none;
+}
+.check_mark{
+    cursor: pointer;
 }
 
 .contact_name_error, .contact_email_error, .contact_message_error{
@@ -485,10 +391,6 @@ label{
 }
 /*                                                      validate input           */
 
-.zipcode{
-    margin-left: 10px;
-}
-
 
 .name_error, .address_error, .city_error, .zip_error, .country_error, .cardNumber_error, .cardName_error, .expireDate_error, .cvv_error  {
     color: red;
@@ -497,286 +399,773 @@ label{
     font-size: 0.9rem;
 }
 
-/*                                                     Favorite                                            */
-
-.Favorite_jackets_container {
-    font-size: 1rem;
-    font-weight: 600;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 60px;
-    height: 500px;
-}
-
-.fav_jacket1, .fav_jacket2, .fav_jacket3 {
-    padding: 0 20px;
-    margin: 20px 15px 0 15px;
-}
-
-.addtobag_btn {
-    background-color: rgb(87, 86, 86);
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    padding: 10px 25px 10px 25px;
-    cursor: pointer;
-    margin-left: 7px;
-    margin-top: 5px;
-    text-decoration: none;
-}
-
-.addtobag_btn:hover{
-    background-color:rgb(51, 51, 51);
-}
-
-.popUp{
-    border: 2px solid rgb(16, 158, 3);
-    width: 400px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 5px 0 5px 0;
-    margin: auto;
-    text-align: center;
-    align-content: center;
-    margin-top: 15px;
-    display: none;
-}
-
 /*                                                  Your bag                              */
-
-.yourbag_container {
-    margin-top: 20px;
-    margin-left: 80px;
-}
-.yourbag:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
-.jacket1_countainer, .jacket2_countainer {
-    display: flex;
-    border-bottom: 1px solid black;
-    position: relative;
-    margin: 30px 0px;
-}
-
-.jacketimg_yourbag, .jacketimg_yourbag2{
-    margin: 0 0 20px 30px;
-}
-
-.winter_jacket {
-    font-size: 1.2rem;
-    font-weight: 700;
-    position: absolute;
-    top: 10px;
-    left: 300px;
-    
-}
-
-.size {
-    font-size: 1rem;
-    font-weight: 700;
-    position: absolute;
-    left: 300px ;
-    top: 90px;
-}
-
-
-.color {
-    font-size: 1rem;
-    font-weight: 700;
-    position: absolute;
-    left: 300px;
-    top: 120px;
-}
-
-.amount {
-    font-size: 1rem;
-    font-weight: 700;
-    border: 1px solid;
-    height: 23px ;
-    position: absolute;
-    top: 80px;
-    right: 380px;
-}
-
-.price {
+.shopping_bag{
     font-size: 1.5rem;
-    font-weight: 900;
-    position: absolute;
-    right: 150px;
-    top: 65px;
+    font-weight: 500;
+    padding: 20px;
+}
+.img_yourbag_container{
+    width: 50%;
+    text-align: center;
+}
+.jacket_img_yourbag{
+    padding: 10px;
 }
 
-.minus {
-    font-size: 1rem;
-    border-right: 1px solid;
-    padding: 0px 12px 0 10px;
-    font-weight: 800;
+.jacket_countainer{
+    display: flex;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 20px;
+}
+.jacket_details_container{
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
 
-.plus {
-    border-left: 1px solid;
-    padding: 0 8px 0 9px;
-    margin: 0 0 0 20px;
+.jacket_name {
+    padding: 0 10px 0px 10px;
+    font-weight: 600;
 }
-
+.size {
+    padding: 10px 10px 0px 10px;
+}
+.color {
+    padding: 0px 10px 10px 10px;
+}
+.amount_container{
+    display: inline-flex;
+    padding: 10px 0px 10px 10px;
+}
+.amount {
+    padding: 0 8px;
+}
+.price {
+    margin-left: 5px ;
+}
+.btn_amount{
+    width: 30px;
+    height: 30px;
+    border: solid black 1px;
+}
 
 .checkout_container {
-    font-size: 1.2rem;
-    font-weight: 700;
-    display: flex;
-    margin-left:920px;
+    margin: 25px;
 }
 .subtotal_yourbag {
-    margin-right: 30px ;
+    padding: 20px 10px;
+    font-weight: 400;
 }
 
 .pay_yourbag {
-    font-size: 1.5rem;
-    font-weight: 900;
-    position: relative;
-    bottom:10px;
+    float: right;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .checkout_btn {
-    font-size: 1rem ;
     font-weight: 700;
-    text-decoration: none;
-    padding: 10px 30px;
     color: white;
-    background-color: rgb(75, 74, 74);
-    cursor: pointer;
-    margin-left: 935px;
-}
-
-.checkout_btn:hover{
-    background-color: rgb(27, 27, 27);
+    background-color: red;
+    border: none;
+    width: 100%;
+    padding: 10px;
 }
 
 /*                                                       Payment                                         */
 
 .form_container {
-    display: flex;
-    background: rgb(248, 222, 219);
-    padding-bottom: 95px;
-    position: relative;
+    padding: 30px;
 }
-
-.contact_H1{
-    font-size:1.5rem;
-    font-weight: 800;
-    margin-left: 30px;
-    text-underline-offset: 4px;
+.billig_container{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
-
-.payment:hover{
-    text-decoration: underline;
-}
-
 .billig_info {
-    font-size: 1rem ;
-    font-weight: 900;
-    margin: 40px 0 0 180px;
-    
+    font-weight: 400;
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+    margin-bottom: 0;
 }
-#full_name, #address, #country {
-    width: 210px ;
-    height: 8px ;
-    margin: 10px 0;
-    font-size: 1rem;
-    padding: 10px;
+.contact_H1{
+    font-size:1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
-
-#city, #zipcode {
-    width: 70px;
-    height: 10px;
-    margin: 0 10px 0rem 10px; 
-    font-size: 1.3rem;
-    padding: 10px; 
-}
-.city_zip_container{
-    display: flex;
-    height: 8px;
-    margin: 30px 0 50px 0;
-}
-
 
 .credit_card_info_container{
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 800px;
-    top: 40px;
-
-
+    font-weight: 400;
+    width: 90%;
+    padding: 15px;
+    margin: auto;
 }
 
-#card_number, #card_holder, #expire_date {
-    width: 210px;
+#full_name, #email_payment, #address{
+    width: 100% ;
+    height: 8px ;
+    padding: 12px;
+}
+#country{
+    width: 100px ;
+    padding: 5px;
+
+} 
+
+#city, #zipcode {
+    width: 80px;
+    height: 10px;
+    padding: 12px; 
+}
+.city_zip_container{
+    display: "";
+}
+
+#card_number, #card_holder {
+    width: 100%;
     height: 10px;
     margin: 10px 0;
-    font-size: 1.3rem;
-    padding: 10px;
+    padding: 12px;
 }
 
-#cvv {
-    width: 70px;
+#expire_date, #cvv {
+    width: 50px;
     height: 10px;
-    font-size: 1.3rem;
-    padding: 10px;
+    margin: 10px 2px;
+    padding: 12px;
 }
 
 .paynow_btn{
-    font-size: 1.5rem;
     font-weight: 700;
-    width: 165px ;
-    height: 50px;
-    border-radius: 5%;
-    cursor: pointer;
-    background-color: rgb(233, 139, 139);
+    color: white;
+    background-color: red;
     border: none;
-    position: relative;
-    right: 250px;
-    top: 50px;
+    width: 90%;
+    height: 30px;
+    display: block;
+    margin: 20px auto;
 }
 
-.paynow_btn:hover{
-    background-color: rgb(240, 108, 108);
+/*                                                Success page                 */
+.success_background{
+    background-image: url(/images/firstpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(60%);
 }
-
+.success_mg_container{
+    background-color: white;
+    text-align: center;
+    padding: 10px;  
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.h1_sucess{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.success_msg{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.success_btn{
+    font-weight: 400;
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 15px;
+    border: solid 1.5px black;
+}
 /*                                                      FOOTER                                      */
 .container_footer{
-    font-size: 1rem;
-    font-weight: 700 ;
-}
-footer {
-    display: inline;
+    font-weight: 300 ;
 }
 
 
+@media only screen and (min-width: 500px) {
+    /*                                             NAV topmeny bar       tablet                                           */
+    .top_nav{
+        width: 45%;
+    }
 
 
 
 
-@media only screen and (min-width: 520px) {
+    /*                                               HOME first page       tablet                         */
+    .landing_img{
+        background-image: url(/images/firstpage.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        padding: 150px 0px;
+    }
+
+    .slogan-block {
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        text-align: center;
+        color: white;
+    }
+    .slogan-block h1{
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-variant: small-caps;
+        padding: 10px;
+    }
+    .slogan-block p{
+        padding: 3px;
+        font-weight: 300;
+    }
+    .shop_btn{
+        background-color: tomato;
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+
+    }
+    /*                                              First page TOP SELLERS      tablet                           */
+
+    .top_sellers{
+        padding: 20px;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+    .container_bestsell{
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .best_seller_item {
+        text-align: center;
+        padding: 10px;
+    }
+    .best_seller_img{
+        width: 190px;
+    }
 
 
-        /*                                            nav   tablet                           */
-        /*                                           Home page tablet                     */
-        /*                                              item page tablet                             */
-        /*                                              about us tablet                              */
-        /*                                              Contact tablet                              */
-        /*                                              favorite tablet                           */
-        /*                                              your bag tablet                               */
-        /*                                               payment tablet                              */
-        /*                                              footer tablet                               */
+    /*                                                  PRODUCTS  tablet                                       */
+    .product_img{
+        max-width: 100%;
+        height: auto;
+        object-fit: scale-down;
+    }
+    .product_text{
+        padding: 10px;
+    }
+    .product_h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .filter_sort {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        text-align: end;
+    }
+    .products_nav {
+        font-size: 0.9rem;
+    }
+    .bestseller_products_nav{
+        display: none;
+    }
+    .products_bar{
+        border-bottom: 1px solid grey;
+        text-align: center;
+        display: none;
+        font-weight: 400;
+        padding: 10px;
+        
+    }
+    .productslist_container {
+        display: none;
+    }
+    .products_container {
+        text-align: center;
+    }
+
+    .product_jacket { 
+        font-size: 1.3rem;
+        font-weight: 300;
+        padding: 20px;
+    }
+    .product_jacket img {
+        padding-bottom: 20px;
+    }
+    .product_name{
+        font-weight: 600;
+    }
+
+    .product_price{
+        color: #222
+    }
+    /*                                                   Item page   tablet                                    */
+    .middel_container{
+        content: '.';
+        animation: dots 1s steps(5, end) infinite;
+    }
+    @keyframes dots {0%, 20% {
+        text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);}
+        40% {
+        color: white;
+        text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);}
+        60% {
+        text-shadow:
+            .25em 0 0 white,
+            .5em 0 0 rgba(0,0,0,0);}
+        80%, 100% {
+        text-shadow:
+            .25em 0 0 white,
+            .5em 0 0 white;}
+    }
+
+    .middel_container{
+        flex: 10%;
+        font-size: 1.7rem;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .model_item {
+        margin: auto;
+        text-align: center;
+    }
+    .bestSellerJacket{
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .rainjacket_details{
+        padding: 20px ;
+    }
+    .red_rain_jacket{
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    .red_rain_jacket_price{
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    .text_details, .text_detail {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .size_detail {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+
+    .s, .m, .l,.xl{
+        border: 1.3px solid;
+        padding: 0 7px 0 7px;
+    }
+
+    .addToBag_itemPage {
+        font-weight: 600;
+        width: 100%;
+        height: 38px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: auto;
+    }
+    .item_heart{
+        display: none;
+    }
+    .item_description_container{
+        padding: 20px;
+    }
+    .succes_msg{
+        border: 2px solid rgb(16, 158, 3);
+        width: 400px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 5px 0 5px 0;
+        margin: auto;
+        text-align: center;
+        align-content: center;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .favorite_msg{
+        border: 2px solid rgb(16, 158, 3);
+        width: 430px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 5px 0 5px 0;
+        margin: auto;
+        text-align: center;
+        align-content: center;
+        margin-top: 10px;
+        display: none;
+    }
+    .loading_error{
+        font-size: 1rem;
+    }
+
+
+    /*                                                    About us  tablet                                               */
+
+    .container_aboutus {
+        background-image: url(/images/aboutus.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        padding: 130px 0px;
+        position: relative;
+    }
+    .mid_text, .mid_text2 {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .mid_text2{
+        padding-top: 40px;
+    }
+
+    .container_P {
+        font-weight: 400;
+        padding: 30px;
+    }
+    .info1::first-letter, .info2::first-letter{
+        font-size: 2rem;
+    }
+
+    /*                                                     Contact  tablet                                         */
+
+    .contact_container {
+        background-color: rgb(235, 245, 253);
+        padding: 20px;
+    }
+    .form_contact_container{
+        padding: 15px;
+    }
+    .contact_form{
+        display: block;
+        text-align: left;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        padding: 15px;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow:         6px 6px 18px 0px rgba(50, 50, 50, 0.54);
+    }
+    .contact_form label{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    input[type=text], textarea{
+        width: 100%;
+        padding: 10px ;
+        border: solid 1px rgb(118, 118, 118);
+        margin: 10px 0;
+    }
+    textarea{
+        height: 150px;
+    }
+
+    input[type=text], textarea:focus{
+        outline: none;
+    }
+    #contact_sumbit {
+        background-color: rgba(255, 255, 255, 0.295);
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 600;
+        border: solid 1px rgb(118, 118, 118);
+    }
+
+
+    .contact_details_contrainer {
+        text-align: center;
+        padding: 20px;
+    }
+    .contact_sub_heading{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    .contact_info{
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+    .message_sent{
+        border: 3px solid rgb(16, 160, 3);
+        background-color: white;
+        width: 400px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 6px 0;
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+        top: 10px;
+        display: none;
+    }
+    .check_mark{
+        cursor: pointer;
+    }
+
+    .contact_name_error, .contact_email_error, .contact_message_error{
+        color: red;
+        font-size: 0.8rem;
+        display: none;
+        margin-left: 10px;
+    }
+    /*                                                      validate input  tblet                       */
+    .name_error, .address_error, .city_error, .zip_error, .country_error, .cardNumber_error, .cardName_error, .expireDate_error, .cvv_error  {
+        color: red;
+        font-weight: 600;
+        display: none;
+        font-size: 0.9rem;
+    }
+
+    /*                                             Your bag  tablet                             */
+    .shopping_bag{
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 20px;
+    }
+    .img_yourbag_container{
+        width: 50%;
+        text-align: center;
+    }
+    .jacket_img_yourbag{
+        padding: 10px;
+    }
+
+    .jacket_countainer{
+        display: flex;
+        border-bottom: 1px solid rgb(182, 182, 182);
+        padding: 20px;
+    }
+    .jacket_details_container{
+        font-size: 1.1rem;
+        font-weight: 300;
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .jacket_name {
+        padding: 0 10px 0px 10px;
+        font-weight: 600;
+    }
+    .size {
+        padding: 10px 10px 0px 10px;
+    }
+    .color {
+        padding: 0px 10px 10px 10px;
+    }
+    .amount_container{
+        display: inline-flex;
+        padding: 10px 0px 10px 10px;
+    }
+    .amount {
+        padding: 0 8px;
+    }
+    .price {
+        margin-left: 5px ;
+    }
+    .btn_amount{
+        width: 30px;
+        height: 30px;
+        border: solid black 1px;
+    }
+
+    .checkout_container {
+        margin: 25px;
+    }
+    .subtotal_yourbag {
+        padding: 20px 10px;
+        font-weight: 400;
+    }
+
+    .pay_yourbag {
+        float: right;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .checkout_btn {
+        font-weight: 700;
+        color: white;
+        background-color: red;
+        border: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /*                                               Payment   tablet                                      */
+
+    .form_container {
+        padding: 30px;
+    }
+    .billig_container{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+    .billig_info {
+        font-weight: 400;
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+        margin-bottom: 0;
+    }
+    .contact_H1{
+        font-size:1.2rem;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    .credit_card_info_container{
+        font-weight: 400;
+        width: 90%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    #full_name, #email_payment, #address{
+        width: 100% ;
+        height: 8px ;
+        padding: 12px;
+    }
+    #country{
+        width: 100px ;
+        padding: 5px;
+
+    } 
+
+    #city, #zipcode {
+        width: 80px;
+        height: 10px;
+        padding: 12px; 
+    }
+    .city_zip_container{
+        display: "";
+    }
+
+    #card_number, #card_holder {
+        width: 100%;
+        height: 10px;
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    #expire_date, #cvv {
+        width: 50px;
+        height: 10px;
+        margin: 10px 2px;
+        padding: 12px;
+    }
+
+    .paynow_btn{
+        font-weight: 700;
+        color: white;
+        background-color: red;
+        border: none;
+        width: 90%;
+        height: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /*                                                Success page  tablet               */
+    .success_background{
+        background-image: url(/images/firstpage.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left;
+        width: 100%;
+        height: 100vh;
+        filter: brightness(60%);
+    }
+    .success_mg_container{
+        background-color: white;
+        text-align: center;
+        padding: 10px;  
+        width: 80%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    .h1_sucess{
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .success_msg{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .success_btn{
+        font-weight: 400;
+        display: block;
+        margin: 10px auto;
+        padding: 8px;
+        border-radius: 15px;
+        border: solid 1.5px black;
+    }
+
+    /*                                                      FOOTER  tablet                                    */
+    .container_footer{
+        font-weight: 300 ;
+    }
 }
 
 
-    /*                                            DESKT TOP                            */
+    /*            33333333333333333333333333333333333333      DESKT TOP   333333333333333333333333333333                 */
 @media only screen and (min-width: 980px) {
 
     .topnav {
@@ -830,10 +1219,6 @@ footer {
         text-underline-offset: 4px;
         font-size: 1.2rem;
     }
-    .current_nav2{
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
     /*                                              home desktop                             */
     .slogan-block {
         position: absolute;
@@ -842,12 +1227,6 @@ footer {
         color: white;
         font-size: 1.5rem;
         font-weight: bold;
-    }
-    
-    h1 {
-        position: relative;
-        right: 40px;
-        font-size: 2.5rem;
     }
     
     .shop_btn {
@@ -914,7 +1293,7 @@ footer {
         height: 850px;
         top: -15px;
     }
-    .productslist_Container {
+    .productslist_container {
         font-size: 1.2rem;
         font-weight: 600;
         border-right: 1px solid;
@@ -936,7 +1315,7 @@ footer {
         margin-top: 30px;
     }
     
-    .Sorting {
+    .sorting {
         position: absolute;
         left: 950px;
         width: 155px;
@@ -1075,7 +1454,7 @@ footer {
         text-decoration: none;
         color: black;
     }
-    .item_details_container{
+    .item_description_container{
         font-size: 1rem;
         margin-left: 80px;
         margin-top: 50px;
@@ -1172,7 +1551,7 @@ footer {
         height: 550px;
     }
 
-    .fieldset_contract {
+    .form_contact_container {
         font-size: 1rem;
         width: 0px;
         height: 400px;
@@ -1328,27 +1707,23 @@ footer {
         display: none;
     }
     /*                                              your bag desktop                               */
-    .yourbag_container {
-        margin-top: 20px;
-        margin-left: 80px;
-    }
     .yourbag:hover {
         text-decoration: underline;
         text-underline-offset: 4px;
     }
     
-    .jacket1_countainer, .jacket2_countainer {
+    .jacket_countainer{
         display: flex;
         border-bottom: 1px solid black;
         position: relative;
         margin: 30px 0px;
     }
     
-    .jacketimg_yourbag, .jacketimg_yourbag2{
+    .jacket_img_yourbag{
         margin: 0 0 20px 30px;
     }
     
-    .winter_jacket {
+    .jacket_name {
         font-size: 1.2rem;
         font-weight: 700;
         position: absolute;

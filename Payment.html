@@ -3,7 +3,7 @@
     <head>
         <title>Payment</title>
         <meta name="Description"    content="Payment">
-        <meta name="viewpoint"  content="width=device-width, inital-scale=1"> 
+        <meta name="viewport"  content="width=device-width, inital-scale=1"> 
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/asq2lpq.css">
         <script src="https://kit.fontawesome.com/95eeee5aab.js" crossorigin="anonymous"></script>
@@ -11,88 +11,103 @@
 
     <body>
         <header>
-            <nav class="topnav">
-                <ul>
-                    <li><a href="index.html"> <img src="images/RainyDays_Logo(1).png" alt="Rainydays_logo"></a></li>
-                    <li class="products"><a href="Products.html">Products</a></li>
-                    <li class="aboutus"><a href="Aboutus.html">About us</a></li>
-                    <li class="contact"><a href="Contract.html">Contact</a></li>
+            <div class="logo_container">
+                <div class="hamburger"><i class="fas fa-bars fa-2x"></i></div>
+                <img class="nav_logo" src="/images/RainyDays_Logo(1).png" alt="rainyday logo">
+                <div class="yourbag_mobile"><a href="Yourbag.html"><i class="fas fa-shopping-bag fa-lg"></i></a></div>
+            </div>
+
+
+            <nav >
+                <ul class="top_nav"> 
+                    <li class="home_nav"><a href="index.html">Home</a></li>
+                    <li class="products_topnav"><a href="Products.html">Products</a></li>
+                    <li class="aboutus_nav"><a href="Aboutus.html">About us</a></li>
+                    <li class="contact_nav"><a href="Contract.html">Contact</a></li>
                     <li><form action="/"></form>
-                    <li><input type="Search" placeholder="Search.." name="search"></li>
-                    <li class="favorite"><a href="Favourite.html"><i class="far fa-heart"></i></a></li>
-                    <li class="yourbag"><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="search_bar_nav"><input type="Search" placeholder="Search.." name="search"></li>
+                    <li class="yourbag_nav"><a href="Yourbag.html"><i class="fas fa-shopping-bag"></i></a></li>
                 </ul>
             </nav>
         </header>
+
         
-        <div class="nav2" style="border-bottom: none">
-            <ul>
-                <li class="yourbag"><a href="Favourite.html">Favourite</a></li>
-                <li class="yourbag"><a href="Yourbag.html">Your bag</a></li>
-                <li class="yourbag current_nav2"><a href="Payment.html">Payment</a></li>  
-            </ul>    
-        </div>
 
         <main>
             <form class="form_container">
+                <div class="billig_container">
                     <div class="billig_info">
                         <div>
-                            <h1 class="contact_H1"><u>Billig info</u></h1>
+                            <h1 class="contact_H1">Billig info</h1>
                         </div>
                             
                             <div>
-                                <label for="name_fullname">Full name<span class="name_error">Full name Required</span></label>
+                                <label for="name_fullname">Full name</label>
                                 <input type="text" name="name" id="full_name">
                             </div>
 
                             <div>
-                                <label for="address">Address</label><span class="address_error">Address Required</span>
+                                <label for="email">Your Email</label>
+                                <input type="text" name="email" id="email_payment">
+                            </div>
+
+                            <div>
+                                <label for="address">Address</label>
                                 <input type="text" name="address" id="address">
                             </div> 
                     
                             <div class="city_zip_container">
-                                <label for="city">City <span class="city_error">City Name Required</span></label>
-                                <input  type="text" name="city" class="city" id="city">
+                                <label for="country">Country:</label>
+                                    <select id="country">
+                                        <option value="">Select</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Danmar">Danmark</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="Uk">Uk</option>
+                                    </select>
 
+                                    <label  class="city" for="city">City</label>
+                                    <input  type="text" name="city" id="city">
+                            </div>
+
+                            
+                            <div>
                                 <label class="zipcode" for="zipcode">Zip Code</label>
                                 <input  type="tel" name="zipcode" class="zipcode" id="zipcode">
-                                <div class="zip_error">Zip Code Required</div>
                             </div>
                     
-                            <div>
-                                <label for="country">Country</label>
-                                <input type="text" name="country" id="country">
-                                <div class="country_error">Country Required</div>
-                            </div>
                     </div>
 
                     <div class="credit_card_info_container">
-                        <h1 class="contact_H1"><u>Credit Card info</u></h1>
+                        <h2 class="contact_H1">Credit Card info</h2>
 
-                        <label for="card_number">Card Number</label>
-                        <input type="tel" name="card_number" id="card_number">
-                        <div class="cardNumber_error">CardNumber Required</div>
+                        <div>
+                            <label for="card_number">Card Number</label>
+                            <input type="tel" name="card_number" id="card_number">
+                        </div>
+                        
+                        <div>
+                            <label for="card_holder">Cardholder Name</label>
+                            <input type="text" name="card_holder" id="card_holder">
+                        </div>
+                        
+                        <div>
+                            <label for="expire_date">Expire Date</label>
+                            <input type="tel" name="expire_date" id="expire_date">
 
-                        <label for="card_holder">Cardholder Name</label>
-                        <input type="text" name="card_holder" id="card_holder">
-                        <div class="cardName_error">Name of cardholder required</div>
-
-                        <label for="expire_date">Expire Date</label>
-                        <input type="tel" name="expire_date" id="expire_date">
-                        <div class="expireDate_error">Expire date</div>
-
-                        <label for="cvv">CVV</label>
-                        <input type="tel" name="cvv" id="cvv">
-                        <div class="cvv_error">Enter cvv</div>
-
-                        <button class="paynow_btn" type="submit">Pay Now</button>
+                            <label for="cvv">CVV</label>
+                            <input type="tel" name="cvv" id="cvv">
+                        </div>
+                        
+                        <button class="paynow_btn" type="submit"><a href="Success.html">PAY NOW</a> </button>
                     </div>
+                </div>
             </form>
         </main>
 
-        <footer class="container_footer">
-            <p>Copyright &copy; 2020 RainyDays</p> 
-        </footer>
+        <footer class="container_footer">Copyright &copy; 2020 RainyDays</footer>
 
         <script src="js/payment.js"></script>
     </body>

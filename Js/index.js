@@ -3,7 +3,7 @@ const corsFix = "https://noroffcors.herokuapp.com/";
 const url = corsFix + wordPressUrl;
 
 const bestSellerContainer = document.querySelector(".container_bestsell");
-const indexLoading = document.querySelector(".index_loading")
+const indexLoading = document.querySelector(".index_loading");
 
 async function api(){
     try{
@@ -18,7 +18,7 @@ async function api(){
             }
         console.log(bestSeller[i]);
         bestSellerContainer.innerHTML += ` <div class="best_seller_item">
-                                                <a class="best_Seller_Link" href="bestseller.html?id=${bestSeller[i].id}">
+                                                <a class="best_Seller_Link" href="item.html?id=${bestSeller[i].id}">
                                                 <img class="best_seller_img" src="${bestSeller[i].images[0].src}"></img>
                                                 <p>${bestSeller[i].name} ${bestSeller[i].prices.price} ${bestSeller[i].prices.currency_symbol}</p>
                                                 </a>
@@ -26,7 +26,7 @@ async function api(){
         }
     } catch (error){
         console.log(error);
-        bestSellerContainer.innerHTML +=`<h4 class="loading_error">An error occurred, Cannot find the items. Please try again later </h4>`
+        bestSellerContainer.innerHTML +=`<h4 class="loading_error">An error occurred, Please try again later </h4>`
     }
 }
 api();
@@ -42,14 +42,24 @@ hamburger.addEventListener("click", ()=>{
         topNav.style.display = "none"
     } else {
         topNav.style.display = "block";
-    };
+    }
 });
-
-
 
 
 
 const navLogo = document.querySelector(".nav_logo");
 navLogo.addEventListener("click", ()=>{
     window.location= "/"
+});
+
+
+
+
+/*   your bag btn       */
+
+
+const checkOut_btn = document.querySelector(".checkout_btn");
+
+checkOut_btn.addEventListener("click", ()=>{
+    window.location = "Payment.html";
 });
