@@ -105,6 +105,7 @@ ul li {
 }
 .product_text{
     padding: 10px;
+    font-weight: 200;
 }
 .product_h1{
     font-size: 1.5rem;
@@ -155,6 +156,10 @@ ul li {
 }
 /*                                                   Item page                                       */
 .middel_container{
+    font-size: 1.7rem;
+    margin: 20px 0px;
+    text-align: center;
+
     content: '.';
     animation: dots 1s steps(5, end) infinite;
 }
@@ -175,13 +180,6 @@ ul li {
     text-shadow:
         .25em 0 0 white,
         .5em 0 0 white;}
-}
-
-.middel_container{
-    flex: 10%;
-    font-size: 1.7rem;
-    margin: 20px 0px;
-    text-align: center;
 }
 .model_item {
     margin: auto;
@@ -403,7 +401,7 @@ input[type=text], textarea:focus{
 .shopping_bag{
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 20px;
+    padding: 30px;
 }
 .img_yourbag_container{
     width: 50%;
@@ -413,10 +411,10 @@ input[type=text], textarea:focus{
     padding: 10px;
 }
 
-.jacket_countainer{
+.jacket_container{
     display: flex;
     border-bottom: 1px solid rgb(182, 182, 182);
-    padding: 20px;
+    margin: 20px;
 }
 .jacket_details_container{
     font-size: 1.1rem;
@@ -427,7 +425,7 @@ input[type=text], textarea:focus{
 }
 
 .jacket_name {
-    padding: 0 10px 0px 10px;
+    padding: 0 10px;
     font-weight: 600;
 }
 .size {
@@ -453,7 +451,8 @@ input[type=text], textarea:focus{
 }
 
 .checkout_container {
-    margin: 25px;
+    width: 90%;
+    margin: auto;
 }
 .subtotal_yourbag {
     padding: 20px 10px;
@@ -547,7 +546,7 @@ input[type=text], textarea:focus{
     background-color: red;
     border: none;
     width: 90%;
-    height: 30px;
+    height: 35px;
     display: block;
     margin: 20px auto;
 }
@@ -653,38 +652,28 @@ input[type=text], textarea:focus{
     .container_bestsell{
         font-size: 1.2rem;
         font-weight: 500;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .best_seller_item {
         text-align: center;
         padding: 10px;
     }
     .best_seller_img{
-        width: 190px;
+        width: 200px;
     }
 
 
     /*                                                  PRODUCTS  tablet                                       */
-    .product_img{
-        max-width: 100%;
-        height: auto;
-        object-fit: scale-down;
-    }
     .product_text{
-        padding: 10px;
+        margin: 0 50px;
     }
     .product_h1{
-        font-size: 1.5rem;
-        font-weight: 500;
+        padding: 10px 0;
     }
 
     .filter_sort {
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        text-align: end;
+        margin-right: 20px;
     }
     .products_nav {
         font-size: 0.9rem;
@@ -705,126 +694,32 @@ input[type=text], textarea:focus{
     }
     .products_container {
         text-align: center;
-    }
-
-    .product_jacket { 
-        font-size: 1.3rem;
-        font-weight: 300;
-        padding: 20px;
-    }
-    .product_jacket img {
-        padding-bottom: 20px;
-    }
-    .product_name{
-        font-weight: 600;
-    }
-
-    .product_price{
-        color: #222
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     /*                                                   Item page   tablet                                    */
-    .middel_container{
-        content: '.';
-        animation: dots 1s steps(5, end) infinite;
-    }
-    @keyframes dots {0%, 20% {
-        text-shadow:
-            .25em 0 0 rgba(0,0,0,0),
-            .5em 0 0 rgba(0,0,0,0);}
-        40% {
-        color: white;
-        text-shadow:
-            .25em 0 0 rgba(0,0,0,0),
-            .5em 0 0 rgba(0,0,0,0);}
-        60% {
-        text-shadow:
-            .25em 0 0 white,
-            .5em 0 0 rgba(0,0,0,0);}
-        80%, 100% {
-        text-shadow:
-            .25em 0 0 white,
-            .5em 0 0 white;}
-    }
-
-    .middel_container{
-        flex: 10%;
-        font-size: 1.7rem;
-        margin: 20px 0px;
-        text-align: center;
-    }
-    .model_item {
-        margin: auto;
-        text-align: center;
-    }
     .bestSellerJacket{
-        width: 70%;
-        margin-top: 40px;
+        width: 50%;
+        margin-top: 50px;
     }
 
     .rainjacket_details{
-        padding: 20px ;
+        padding: 30px ;
     }
+
     .red_rain_jacket{
-        font-size: 1.3rem;
-        font-weight: 500;
-        text-decoration: underline;
-        text-underline-offset: 3px;
+        font-weight: 600;
     }
     .red_rain_jacket_price{
-        font-size: 1.3rem;
-        font-weight: 200;
-        margin-bottom: 20px;
-    }
-
-    .text_details, .text_detail {
-        font-size: 1rem;
         font-weight: 300;
-        margin-bottom: 10px;
-    }
-
-    .size_detail {
-        font-size: 1.3rem;
-        font-weight: 400;
-        margin: 40px 0;
-    }
-
-    .s, .m, .l,.xl{
-        border: 1.3px solid;
-        padding: 0 7px 0 7px;
-    }
-
-    .addToBag_itemPage {
-        font-weight: 600;
-        width: 100%;
-        height: 38px;
-        background-color: rgb(255, 0, 0);
-        color: white;
-        border: none;
-        cursor: pointer;
-        margin: auto;
-    }
-    .item_heart{
-        display: none;
     }
     .item_description_container{
-        padding: 20px;
+        padding: 30px;
+        font-weight: 200;
     }
     .succes_msg{
         border: 2px solid rgb(16, 158, 3);
         width: 400px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 5px 0 5px 0;
-        margin: auto;
-        text-align: center;
-        align-content: center;
-        margin-top: 10px;
-        display: none;
-    }
-
-    .favorite_msg{
-        border: 2px solid rgb(16, 158, 3);
-        width: 430px;
         font-size: 1.2rem;
         font-weight: 700;
         padding: 5px 0 5px 0;
@@ -841,326 +736,58 @@ input[type=text], textarea:focus{
 
     /*                                                    About us  tablet                                               */
 
-    .container_aboutus {
-        background-image: url(/images/aboutus.jpg);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center;
-        padding: 130px 0px;
-        position: relative;
+    .info1, .info2{
+        padding: 10px 0;
     }
-    .mid_text, .mid_text2 {
-        font-size: 1.6rem;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-        text-align: center;
-        font-weight: 700;
-    }
-
-    .mid_text2{
-        padding-top: 40px;
-    }
-
-    .container_P {
-        font-weight: 400;
-        padding: 30px;
-    }
-    .info1::first-letter, .info2::first-letter{
-        font-size: 2rem;
-    }
-
     /*                                                     Contact  tablet                                         */
-
     .contact_container {
-        background-color: rgb(235, 245, 253);
         padding: 20px;
     }
     .form_contact_container{
-        padding: 15px;
+        padding: 20px;
     }
     .contact_form{
-        display: block;
-        text-align: left;
-        background-color: white;
-        color: black;
-        border-radius: 8px;
         padding: 15px;
-        width: 100%;
-        margin: 0 auto;
-        box-shadow:         6px 6px 18px 0px rgba(50, 50, 50, 0.54);
-    }
-    .contact_form label{
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-    input[type=text], textarea{
-        width: 100%;
-        padding: 10px ;
-        border: solid 1px rgb(118, 118, 118);
-        margin: 10px 0;
-    }
-    textarea{
-        height: 150px;
-    }
-
-    input[type=text], textarea:focus{
-        outline: none;
-    }
-    #contact_sumbit {
-        background-color: rgba(255, 255, 255, 0.295);
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        text-transform: uppercase;
-        cursor: pointer;
-        font-weight: 600;
-        border: solid 1px rgb(118, 118, 118);
+        width: 70%;
     }
 
 
-    .contact_details_contrainer {
-        text-align: center;
-        padding: 20px;
-    }
-    .contact_sub_heading{
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-
-    .contact_info{
-        font-weight: 400;
-        font-size: 1.2rem;
-        margin: 20px 0;
-    }
-    .message_sent{
-        border: 3px solid rgb(16, 160, 3);
-        background-color: white;
-        width: 400px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 6px 0;
-        position: relative;
-        margin: 10px auto;
-        text-align: center;
-        top: 10px;
-        display: none;
-    }
-    .check_mark{
-        cursor: pointer;
-    }
-
-    .contact_name_error, .contact_email_error, .contact_message_error{
-        color: red;
-        font-size: 0.8rem;
-        display: none;
-        margin-left: 10px;
-    }
-    /*                                                      validate input  tblet                       */
-    .name_error, .address_error, .city_error, .zip_error, .country_error, .cardNumber_error, .cardName_error, .expireDate_error, .cvv_error  {
-        color: red;
-        font-weight: 600;
-        display: none;
-        font-size: 0.9rem;
-    }
-
-    /*                                             Your bag  tablet                             */
-    .shopping_bag{
-        font-size: 1.5rem;
-        font-weight: 500;
-        padding: 20px;
-    }
-    .img_yourbag_container{
-        width: 50%;
-        text-align: center;
-    }
-    .jacket_img_yourbag{
-        padding: 10px;
-    }
-
-    .jacket_countainer{
-        display: flex;
-        border-bottom: 1px solid rgb(182, 182, 182);
-        padding: 20px;
+    /*                                                    Your bag  tablet                             */
+    .jacket_container{
+        margin: 30px;
     }
     .jacket_details_container{
-        font-size: 1.1rem;
-        font-weight: 300;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
+        width: 70%;
     }
-
     .jacket_name {
-        padding: 0 10px 0px 10px;
+        padding: 0 10px;
         font-weight: 600;
     }
     .size {
-        padding: 10px 10px 0px 10px;
-    }
-    .color {
-        padding: 0px 10px 10px 10px;
-    }
-    .amount_container{
-        display: inline-flex;
-        padding: 10px 0px 10px 10px;
-    }
-    .amount {
-        padding: 0 8px;
-    }
-    .price {
-        margin-left: 5px ;
-    }
-    .btn_amount{
-        width: 30px;
-        height: 30px;
-        border: solid black 1px;
-    }
-
-    .checkout_container {
-        margin: 25px;
-    }
-    .subtotal_yourbag {
-        padding: 20px 10px;
-        font-weight: 400;
-    }
-
-    .pay_yourbag {
-        float: right;
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-    .checkout_btn {
-        font-weight: 700;
-        color: white;
-        background-color: red;
-        border: none;
-        width: 100%;
         padding: 10px;
     }
-
+    .price {
+        margin-left: 15px ;
+    }
+    .checkout_container {
+        width: 80%;
+        margin: auto;
+    }
+    .subtotal_yourbag {
+        padding: 20px 15px;
+    }
     /*                                               Payment   tablet                                      */
 
     .form_container {
         padding: 30px;
-    }
-    .billig_container{
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-    }
-    .billig_info {
-        font-weight: 400;
-        width: 90%;
-        margin: 30px auto;
-        padding: 15px;
-        margin-bottom: 0;
-    }
-    .contact_H1{
-        font-size:1.2rem;
-        font-weight: 600;
-        text-align: center;
-        padding-bottom: 10px;
-        text-decoration: underline;
-        text-underline-offset: 2px;
-    }
-
-    .credit_card_info_container{
-        font-weight: 400;
-        width: 90%;
-        padding: 15px;
+        width: 70%;
         margin: auto;
     }
-
-    #full_name, #email_payment, #address{
-        width: 100% ;
-        height: 8px ;
-        padding: 12px;
-    }
-    #country{
-        width: 100px ;
-        padding: 5px;
-
-    } 
-
-    #city, #zipcode {
-        width: 80px;
-        height: 10px;
-        padding: 12px; 
-    }
-    .city_zip_container{
-        display: "";
-    }
-
-    #card_number, #card_holder {
-        width: 100%;
-        height: 10px;
-        margin: 10px 0;
-        padding: 12px;
-    }
-
-    #expire_date, #cvv {
-        width: 50px;
-        height: 10px;
-        margin: 10px 2px;
-        padding: 12px;
-    }
-
-    .paynow_btn{
-        font-weight: 700;
-        color: white;
-        background-color: red;
-        border: none;
-        width: 90%;
-        height: 30px;
-        display: block;
-        margin: 20px auto;
-    }
-
     /*                                                Success page  tablet               */
-    .success_background{
-        background-image: url(/images/firstpage.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: left;
-        width: 100%;
-        height: 100vh;
-        filter: brightness(60%);
-    }
     .success_mg_container{
-        background-color: white;
-        text-align: center;
-        padding: 10px;  
-        width: 80%;
-        position: absolute;
-        top: 40%;
-        left: 10%;
-    }
-    .h1_sucess{
-        font-size: 1.3rem;
-        font-weight: 600;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    .success_msg{
-        font-size: 1.1rem;
-        font-weight: 300;
-    }
-    .success_btn{
-        font-weight: 400;
-        display: block;
-        margin: 10px auto;
-        padding: 8px;
-        border-radius: 15px;
-        border: solid 1.5px black;
-    }
-
-    /*                                                      FOOTER  tablet                                    */
-    .container_footer{
-        font-weight: 300 ;
+        width: 60%;
+        top: 38%;
+        left: 20%;
     }
 }
 
@@ -1288,11 +915,6 @@ input[type=text], textarea:focus{
         text-decoration: underline;
         text-underline-offset: 3px;
     }
-    .product_container{
-        position: relative;
-        height: 850px;
-        top: -15px;
-    }
     .productslist_container {
         font-size: 1.2rem;
         font-weight: 600;
@@ -1349,12 +971,12 @@ input[type=text], textarea:focus{
     .left_container{
         flex: 45%;
     }
+
     .middel_container{
         flex: 10%;
         font-size: 1.7rem;
         margin-top: 20px;
-    }
-    .middel_container{
+        
         content: '.';
         animation: dots 1s steps(5, end) infinite;
     }
@@ -1712,7 +1334,7 @@ input[type=text], textarea:focus{
         text-underline-offset: 4px;
     }
     
-    .jacket_countainer{
+    .jacket_container{
         display: flex;
         border-bottom: 1px solid black;
         position: relative;
@@ -1911,3 +1533,19 @@ input[type=text], textarea:focus{
         display: inline;
     }
 }
+
+
+
+/* 
+fix loader / error text
+
+APIjacket to yourbag
+
+contact validate, expire date
+
+
+footer
+
+
+github, html, report link alle 3
+*/

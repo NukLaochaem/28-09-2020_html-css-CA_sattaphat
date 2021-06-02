@@ -3,7 +3,6 @@ const corsFix = "https://noroffcors.herokuapp.com/";
 const url = corsFix + wordPressUrl;
 
 const bestSellerContainer = document.querySelector(".container_bestsell");
-const indexLoading = document.querySelector(".index_loading");
 
 async function api(){
     try{
@@ -11,9 +10,8 @@ async function api(){
         const bestSeller = await response.json(response);
         
         console.log(bestSeller);
-        indexLoading.innerHTML = "";
         for(let i = 0; i < bestSeller.length; i++){
-            if(i === 5){
+            if(i === 6){
                 break;
             }
         console.log(bestSeller[i]);
