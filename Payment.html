@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="logo_container">
-                <div class="hamburger"><i class="fas fa-bars fa-2x"></i></div>
+                <div class="hamburger"><i class="fas fa-bars fa-lg"></i></div>
                 <img class="nav_logo" src="/images/RainyDays_Logo(1).png" alt="rainyday logo">
                 <div class="yourbag_mobile"><a href="Yourbag.html"><i class="fas fa-shopping-bag fa-lg"></i></a></div>
             </div>
@@ -42,14 +42,11 @@
                         </div>
                             
                             <div>
-                                <label for="name_fullname">Full name</label>
+                                <label for="full_name">Full name</label>
                                 <input type="text" name="name" id="full_name">
                             </div>
 
-                            <div>
-                                <label for="email">Your Email</label>
-                                <input type="text" name="email" id="email_payment">
-                            </div>
+                            
 
                             <div>
                                 <label for="address">Address</label>
@@ -65,23 +62,27 @@
                                         <option value="Danmar">Danmark</option>
                                         <option value="Finland">Finland</option>
                                         <option value="Iceland">Iceland</option>
-                                        <option value="Uk">Uk</option>
+                                        <option value="Uk">United Kingdom</option>
                                     </select>
-
-                                    <label  class="city" for="city">City</label>
-                                    <input  type="text" name="city" id="city">
+                                    <div>
+                                        <label  class="city" for="city">City</label>
+                                        <input  type="text" name="city" id="city">
+                                        
+                                    </div>
+                                    <div>
+                                        <label class="zipcode" for="zipcode">Zip Code</label>
+                                        <input  type="tel" name="zipcode" class="zipcode" id="zipcode">
+                                    </div>
                             </div>
-
-                            
-                            <div>
-                                <label class="zipcode" for="zipcode">Zip Code</label>
-                                <input  type="tel" name="zipcode" class="zipcode" id="zipcode">
-                            </div>
-                    
                     </div>
 
                     <div class="credit_card_info_container">
                         <h2 class="contact_H1">Credit Card info</h2>
+                        
+                        <div>
+                            <label for="email">Your Email</label>
+                            <input type="text" name="email" id="email_payment">
+                        </div>
 
                         <div>
                             <label for="card_number">Card Number</label>
@@ -96,18 +97,19 @@
                         <div>
                             <label for="expire_date">Expire Date</label>
                             <input type="tel" name="expire_date" id="expire_date">
-
+                        </div>
+                        <div>
                             <label for="cvv">CVV</label>
-                            <input type="tel" name="cvv" id="cvv">
+                            <input type="password" name="cvv" id="cvv">
                         </div>
                         
-                        <button class="paynow_btn" type="submit"><a href="Success.html">PAY NOW</a> </button>
                     </div>
+                </div>
+                <div class="paynow_container">
+                    <button class="paynow_btn" type="submit"><a href="Success.html">PAY NOW</a> </button>
                 </div>
             </form>
         </main>
-
-        <footer class="container_footer">Copyright &copy; 2020 RainyDays</footer>
 
         <script src="js/payment.js"></script>
     </body>

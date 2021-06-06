@@ -9,22 +9,20 @@ async function api(){
         const response = await fetch(url);
         const bestSeller = await response.json(response);
         
-        console.log(bestSeller);
         for(let i = 0; i < bestSeller.length; i++){
             if(i === 6){
                 break;
             }
-        console.log(bestSeller[i]);
         bestSellerContainer.innerHTML += ` <div class="best_seller_item">
                                                 <a class="best_Seller_Link" href="item.html?id=${bestSeller[i].id}">
                                                 <img class="best_seller_img" src="${bestSeller[i].images[0].src}"></img>
-                                                <p>${bestSeller[i].name} ${bestSeller[i].prices.price} ${bestSeller[i].prices.currency_symbol}</p>
+                                                <p>${bestSeller[i].name} </p>
+                                                <p>${bestSeller[i].prices.price} ${bestSeller[i].prices.currency_symbol}</p>
                                                 </a>
                                             </div>`
         }
     } catch (error){
-        console.log(error);
-        bestSellerContainer.innerHTML +=`<h4 class="loading_error">An error occurred, Please try again later </h4>`
+        bestSellerContainer.innerHTML +=`<h4 class="loading_error_home">An error occurred, Cannot find the products. Try again later </h4>`
     }
 }
 api();

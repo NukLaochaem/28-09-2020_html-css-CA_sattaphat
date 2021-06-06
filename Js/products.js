@@ -10,12 +10,10 @@ async function api(){
         const response = await fetch(url);
         const products = await response.json(response);
         
-        console.log(products);
         for(let i = 0; i < products.length; i++){
             if(i === 9){
                 break;
             }
-        console.log(products[i]);
         productContainer.innerHTML += ` <div class="product_jacket">
                                                 <a  href="/Item.html?id=${products[i].id}">
                                                 <img class="best_seller_img" src="${products[i].images[0].src}"></img>
@@ -25,7 +23,6 @@ async function api(){
                                             </div>`
         }
     } catch (error){
-        console.log(error);
         productContainer.innerHTML +=`<h4 class="loading_error">An error occurred, Please try again later </h4>`
     }
 }

@@ -26,9 +26,8 @@ a {
 }
 .hamburger{
     position: absolute;
-    top: 20%;
-    left: 2%;
-    padding: 10px;
+    top: 33%;
+    left: 4%;
     cursor: pointer;
 }
 .yourbag_mobile{
@@ -37,27 +36,33 @@ a {
     right: 2%;
     padding: 10px;
 }
+.nav_logo{
+    cursor: pointer;
+}
 
 .top_nav{
-    background-color: rgb(228, 228, 228);
+    background-color: white;
     position: absolute;
     width: 70%;
     text-align: center;;
     display: none;
     z-index: 1;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
 }
-
 ul li {
     font-size: 1.3em;
     font-weight: 500;
     color: black ;
     padding: 10px 0;
+    
 }
-.search_bar_nav, .favorite_nav, .yourbag_nav{
+ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.search_bar_nav, .yourbag_nav{
     display: none;
 }
-
-
 
 
 /*                                               HOME first page                                */
@@ -95,11 +100,18 @@ ul li {
 .best_seller_img{
     width: 190px;
 }
+.loading_error_home{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px;
+}
 
 
 /*                                                  PRODUCTS                                         */
 .product_img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: scale-down;
 }
@@ -111,7 +123,6 @@ ul li {
     font-size: 1.5rem;
     font-weight: 500;
 }
-
 .filter_sort {
     font-size: 1rem;
     font-weight: 400;
@@ -120,12 +131,17 @@ ul li {
 }
 .products_nav {
     font-size: 0.9rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    background-color: white;
+    position: absolute; 
+    right: 2%;
+    width: 200px;
 }
 .bestseller_products_nav{
     display: none;
 }
 .products_bar{
-    border-bottom: 1px solid grey;
     text-align: center;
     display: none;
     font-weight: 400;
@@ -138,7 +154,6 @@ ul li {
 .products_container {
     text-align: center;
 }
-
 .product_jacket { 
     font-size: 1.3rem;
     font-weight: 300;
@@ -150,12 +165,15 @@ ul li {
 .product_name{
     font-weight: 600;
 }
-
+.product_jacket:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+}
 .product_price{
     color: #222
 }
 /*                                                   Item page                                       */
-.middel_container{
+.loader_container_item{
     font-size: 1.7rem;
     margin: 20px 0px;
     text-align: center;
@@ -189,11 +207,10 @@ ul li {
     width: 70%;
     margin-top: 40px;
 }
-
 .rainjacket_details{
     padding: 20px ;
 }
-.red_rain_jacket{
+.item_rain_jacket_name{
     font-size: 1.3rem;
     font-weight: 500;
     text-decoration: underline;
@@ -204,19 +221,16 @@ ul li {
     font-weight: 200;
     margin-bottom: 20px;
 }
-
 .text_details, .text_detail {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 10px;
 }
-
 .size_detail {
     font-size: 1.3rem;
     font-weight: 400;
     margin: 40px 0;
 }
-
 .s, .m, .l,.xl{
     border: 1.3px solid;
     padding: 0 7px 0 7px;
@@ -232,12 +246,16 @@ ul li {
     cursor: pointer;
     margin: auto;
 }
-.item_heart{
-    display: none;
-}
+
 .item_description_container{
-    padding: 20px;
+    padding: 30px;
 }
+.product_description{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 10px 0;
+}
+/*
 .succes_msg{
     border: 2px solid rgb(16, 158, 3);
     width: 400px;
@@ -262,9 +280,12 @@ ul li {
     align-content: center;
     margin-top: 10px;
     display: none;
-}
-.loading_error{
-    font-size: 1rem;
+} */
+.loading_error_item{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0;
 }
 
 
@@ -284,9 +305,8 @@ ul li {
     text-decoration: underline;
     text-underline-offset: 3px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
 }
-
 .mid_text2{
     padding-top: 40px;
 }
@@ -294,6 +314,9 @@ ul li {
 .container_P {
     font-weight: 400;
     padding: 30px;
+}
+.info1, .info2 {
+    font-weight: 300;
 }
 .info1::first-letter, .info2::first-letter{
     font-size: 2rem;
@@ -316,8 +339,8 @@ ul li {
     border-radius: 8px;
     padding: 15px;
     width: 100%;
-    margin: 0 auto;
-    box-shadow:         6px 6px 18px 0px rgba(50, 50, 50, 0.54);
+    margin: 5px auto;
+    box-shadow: 6px 6px 18px 0px rgba(50, 50, 50, 0.54);
 }
 .contact_form label{
     font-weight: 500;
@@ -346,41 +369,28 @@ input[type=text], textarea:focus{
     font-weight: 600;
     border: solid 1px rgb(118, 118, 118);
 }
-
-
 .contact_details_contrainer {
     text-align: center;
     padding: 20px;
 }
 .contact_sub_heading{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 4px;
 }
-
 .contact_info{
     font-weight: 400;
     font-size: 1.2rem;
     margin: 20px 0;
+    cursor: pointer
 }
-.message_sent{
-    border: 3px solid rgb(16, 160, 3);
-    background-color: white;
-    width: 400px;
+.contact_sosial_media{
+    font-weight: 400;
     font-size: 1.2rem;
-    font-weight: 700;
-    padding: 6px 0;
-    position: relative;
-    margin: 10px auto;
-    text-align: center;
-    top: 10px;
-    display: none;
+    margin: 30px 0;
+    cursor: pointer
 }
-.check_mark{
-    cursor: pointer;
-}
-
 .contact_name_error, .contact_email_error, .contact_message_error{
     color: red;
     font-size: 0.8rem;
@@ -403,6 +413,12 @@ input[type=text], textarea:focus{
     font-weight: 500;
     padding: 30px;
 }
+.jacket_container{
+    border-bottom: 1px solid rgb(182, 182, 182);
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
 .img_yourbag_container{
     width: 50%;
     text-align: center;
@@ -411,17 +427,12 @@ input[type=text], textarea:focus{
     padding: 10px;
 }
 
-.jacket_container{
-    display: flex;
-    border-bottom: 1px solid rgb(182, 182, 182);
-    margin: 20px;
-}
 .jacket_details_container{
     font-size: 1.1rem;
     font-weight: 300;
     width: 50%;
     padding: 10px;
-    text-align: center;
+    margin: auto;
 }
 
 .jacket_name {
@@ -436,18 +447,22 @@ input[type=text], textarea:focus{
 }
 .amount_container{
     display: inline-flex;
-    padding: 10px 0px 10px 10px;
+    padding: 20px;
+    margin-left: auto;
 }
 .amount {
     padding: 0 8px;
-}
-.price {
-    margin-left: 5px ;
 }
 .btn_amount{
     width: 30px;
     height: 30px;
     border: solid black 1px;
+    cursor: pointer;
+}
+
+.price {
+    padding: 0px 5px;
+    font-weight: 300;
 }
 
 .checkout_container {
@@ -464,7 +479,6 @@ input[type=text], textarea:focus{
     font-size: 1.2rem;
     font-weight: 500;
 }
-
 .checkout_btn {
     font-weight: 700;
     color: white;
@@ -472,15 +486,16 @@ input[type=text], textarea:focus{
     border: none;
     width: 100%;
     padding: 10px;
+    cursor: pointer;
 }
 
 /*                                                       Payment                                         */
 
 .form_container {
-    padding: 30px;
+    margin: 30px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
 }
 .billig_container{
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 .billig_info {
@@ -512,15 +527,16 @@ input[type=text], textarea:focus{
     padding: 12px;
 }
 #country{
-    width: 100px ;
+    width: 60% ;
     padding: 5px;
-
+    margin: 10px 0;
 } 
 
 #city, #zipcode {
     width: 80px;
     height: 10px;
-    padding: 12px; 
+    padding: 12px;
+    margin: 10px 0;
 }
 .city_zip_container{
     display: "";
@@ -534,12 +550,14 @@ input[type=text], textarea:focus{
 }
 
 #expire_date, #cvv {
-    width: 50px;
+    width: 70px;
     height: 10px;
     margin: 10px 2px;
     padding: 12px;
 }
-
+.paynow_container{
+    padding: 20px;
+}
 .paynow_btn{
     font-weight: 700;
     color: white;
@@ -548,7 +566,8 @@ input[type=text], textarea:focus{
     width: 90%;
     height: 35px;
     display: block;
-    margin: 20px auto;
+    margin: auto;
+    cursor: pointer;
 }
 
 /*                                                Success page                 */
@@ -590,9 +609,7 @@ input[type=text], textarea:focus{
     border: solid 1.5px black;
 }
 /*                                                      FOOTER                                      */
-.container_footer{
-    font-weight: 300 ;
-}
+
 
 
 @media only screen and (min-width: 500px) {
@@ -623,7 +640,7 @@ input[type=text], textarea:focus{
         color: white;
     }
     .slogan-block h1{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 500;
         font-variant: small-caps;
         padding: 10px;
@@ -651,7 +668,7 @@ input[type=text], textarea:focus{
     }
     .container_bestsell{
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 400;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -677,17 +694,10 @@ input[type=text], textarea:focus{
     }
     .products_nav {
         font-size: 0.9rem;
+        width: 300px;
     }
     .bestseller_products_nav{
         display: none;
-    }
-    .products_bar{
-        border-bottom: 1px solid grey;
-        text-align: center;
-        display: none;
-        font-weight: 400;
-        padding: 10px;
-        
     }
     .productslist_container {
         display: none;
@@ -707,31 +717,17 @@ input[type=text], textarea:focus{
         padding: 30px ;
     }
 
-    .red_rain_jacket{
+    .item_rain_jacket_name{
         font-weight: 600;
     }
-    .red_rain_jacket_price{
+    .item_rain_jacket_price{
         font-weight: 300;
     }
     .item_description_container{
         padding: 30px;
         font-weight: 200;
     }
-    .succes_msg{
-        border: 2px solid rgb(16, 158, 3);
-        width: 400px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 5px 0 5px 0;
-        margin: auto;
-        text-align: center;
-        align-content: center;
-        margin-top: 10px;
-        display: none;
-    }
-    .loading_error{
-        font-size: 1rem;
-    }
+
 
 
     /*                                                    About us  tablet                                               */
@@ -755,9 +751,11 @@ input[type=text], textarea:focus{
     /*                                                    Your bag  tablet                             */
     .jacket_container{
         margin: 30px;
+        flex-flow: row;
     }
     .jacket_details_container{
         width: 70%;
+        text-align: center;
     }
     .jacket_name {
         padding: 0 10px;
@@ -769,6 +767,9 @@ input[type=text], textarea:focus{
     .price {
         margin-left: 15px ;
     }
+    .amount_container{
+        align-items: center;
+    }
     .checkout_container {
         width: 80%;
         margin: auto;
@@ -779,9 +780,9 @@ input[type=text], textarea:focus{
     /*                                               Payment   tablet                                      */
 
     .form_container {
-        padding: 30px;
+
         width: 70%;
-        margin: auto;
+        margin: 30px auto;
     }
     /*                                                Success page  tablet               */
     .success_mg_container{
@@ -795,51 +796,19 @@ input[type=text], textarea:focus{
     /*            33333333333333333333333333333333333333      DESKT TOP   333333333333333333333333333333                 */
 @media only screen and (min-width: 980px) {
 
-    .topnav {
-        margin: auto;
+    .logo_container{
+        display: "";
     }
-    nav li {
-        display: inline-block;
+    .hamburger, .yourbag_mobile{
+        display: "";
     }
+    .top_nav {
+        display: "";
+    }
+    .search_bar_nav,  .yourbag_nav{
+        display: "";
+    } 
 
-    nav a {
-        columns: #3b3b3b;
-        text-decoration: none;
-        font-size: 1.3em;
-        font-weight: bold;
-        color: black ;
-        margin: 0 35px;
-    }
-
-    input[type=search] {
-        width: 180px;
-        height: 25px;
-        font-size: 1.2rem;  
-        border-radius: 4px; 
-        margin: 0 50px 0rem;
-    }
-    .products, .aboutus, .contact, .favorite, .yourbag, input[type=search] {
-        position: relative;
-        bottom: 18px
-    }
-    #hamburger-menu{
-        display: none;
-    }
-    .hamburger-label{
-        display: none;
-    }
-    section > img {
-        width: 100%;
-    }
-
-    .far.fa-heart:hover{
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-    .fas.fa-shopping-bag:hover{
-        text-decoration: underline;
-        text-underline-offset: 4px; 
-    }
 
     .current {
         text-decoration: underline;
@@ -847,37 +816,29 @@ input[type=text], textarea:focus{
         font-size: 1.2rem;
     }
     /*                                              home desktop                             */
+    .landing_img{
+        padding: 200px 0px;
+    }
+    
     .slogan-block {
         position: absolute;
-        left: 800px;
-        top: 270px;
+        right : 220px;
+        top: 150px;
         color: white;
         font-size: 1.5rem;
         font-weight: bold;
     }
-    
+    .slogan-block h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
     .shop_btn {
         padding: 14px 23px;
-        margin-top: 1rem;
-        border-radius: 12px;
-        border: 2px;
-        font-size: 0.7em;
-        transition-duration: 0.4s;
-        font-weight: bolder;
-        text-decoration: none;
-        color: white;
-        background-color:rgb(37, 37, 37);
-        opacity: 0.9;
-        cursor: pointer;
-        position: relative;
-        right: 15px;
-        box-shadow: 5px 5px 5px rgb(54, 54, 54);
-        text-underline-offset: 3px;
+        font-size: 1rem;
     }
     .shop_btn:hover {
-        background-color: rgb(19, 19, 19);
         text-decoration: underline;
-        opacity: 1;
+        text-underline-offset: 3px;
     }
     
     /*                                              First page TOP SELLERS                                 */
@@ -889,94 +850,45 @@ input[type=text], textarea:focus{
     }
     
     .container_bestsell{
-        font-size: 1.2rem;
-        font-weight: 700;
-        display: flex;
-        flex: center;
-    
+        grid-template-columns: repeat(3, 1fr);
     }
     .best_seller_item {
-        flex-grow: 1;
-        text-align: center;
-        text-decoration: none;
-        color: black;
+        padding: 30px;
     }
-    
-    .best_seller_img{
-        width: 190px;
-    }
-    
     .best_seller_item:hover{
         text-decoration: underline;
         text-underline-offset: 4px;     
     }
     /*                                              product desktop                              */
-    .products:hover{
-        text-decoration: underline;
-        text-underline-offset: 3px;
+
+    .product_img{
+        height: 350px;
+        object-fit: cover;
+        object-position: top;
     }
-    .productslist_container {
-        font-size: 1.2rem;
-        font-weight: 600;
-        border-right: 1px solid;
-        margin-top: 60px;
-        margin-left: 90px;
-        width: 280px;
+    .products_bar{
+        border: none;
+        padding: 20px;
     }
-    
+    .products_nav {
+        width: 350px;
+    }
     .products_bar:hover{
         text-decoration: underline;
         text-underline-offset: 3px;
     }
-    
-    .products_nav {
-        border-bottom: 1px solid rgb(112, 108, 108);
-        font-size: 0.9rem;
-        font-weight: 500;
-        margin-left: 70px ;
-        margin-top: 30px;
-    }
-    
-    .sorting {
-        position: absolute;
-        left: 950px;
-        width: 155px;
-        top: 0px;
-    }
-    
+
     .products_container {
-        font-size: 1.2  rem;
-        font-weight: 600;
-        width: 690px;
-        display: flex;
-        flex-wrap: wrap;
-        position: absolute;
-        left: 430px;
-        top: 80px;
-        text-decoration: none;
-        color: black;
-        
+        grid-template-columns: repeat(3,1fr);
     }
-    .jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6, .jacket7, .jacket8, .jacket9 { 
-        padding: 0 37px;
-        margin: auto;
-        text-decoration: none;
-        color: black;
+    .product_name{
+        font-weight: 500;
+        font-size: 1.2rem;
     }
     /*                                              item page desktop                             */
     
-    .item_container{
-        display: flex;
-    }
-    .left_container{
-        flex: 45%;
-    }
 
-    .middel_container{
-        flex: 10%;
-        font-size: 1.7rem;
-        margin-top: 20px;
-        
+    .loader_container_item{
         content: '.';
         animation: dots 1s steps(5, end) infinite;
     }
@@ -999,116 +911,42 @@ input[type=text], textarea:focus{
             .5em 0 0 white;}
     }
 
+
+    .item_container{
+        display: flex;
+    }
+    .left_container{
+        flex: 40%;
+    }
     .bestSellerJacket{
-        width: 350px;
-        margin-left: 20px;
+        width: 60%;
+        margin-top: 80px;
     }
-
-    .model_item {
-        margin: 70px 0 0 120px;
-    }
-
-    /*.jacket_model2{
-        margin-left: 20px;
-    }
-
-    .jacket_model3 {
-        margin-left: 100px;
-    }*/
-
     .rainjacket_details{
-        flex: 45%;
-        margin-top: 40px ;
-    }
-    .red_rain_jacket{
-        font-size: 1.3rem;
-        font-weight: 900;
-        text-decoration: underline;
-        margin-left: 38px;
-        text-underline-offset: 3px;
+        flex: 35%;
+        margin-top: 30px ;
+        padding: 50px;
     }
     .red_rain_jacket_price{
-        font-size: 1.3rem;
-        font-weight: 900;
-        text-decoration: underline;
-        text-underline-offset: 3px;
+        margin: 20px 0;
     }
-
-    .text_details, .text_detail {
-        font-size: 1rem;
-        font-weight: 700;
-        margin-bottom: 10px;
+    .text_details, .text_detail{
+        margin: 15px 0;
     }
-
-    .size_detail {
-        font-size: 1.3rem;
-        font-weight: 900;
-        margin: 40px 0;
-    }
-
-    .s, .m, .l,.xl{
-        border: 1.3px solid;
-        padding: 0 7px 0 7px;
-    }
-
-    /*.s:hover, .m:hover, .l:hover,.xl:hover{
-        background-color: rgb(250, 181, 154); 
-    } */
-
     .addToBag_itemPage {
-        font-size: 1rem;
-        font-weight: 700;
-        width: 150px;
-        height: 38px;
-        margin: 16px 20px 0px 20px;
-        background-color: rgb(238, 238, 238);
-        cursor: pointer;
-        border: 2px solid rgb(97, 96, 96);
-    }
-    .addToBag_itemPage:hover{
-        background-color: rgb(252, 182, 155);
-    }
-    .item_heart:hover{
-        color: red;
-        cursor: pointer;
-    }
-    .item_heart{
-        text-decoration: none;
-        color: black;
+        width: 200px;
+        margin-top: 20px;
     }
     .item_description_container{
         font-size: 1rem;
-        margin-left: 80px;
-        margin-top: 50px;
-    }
-    .succes_msg{
-        border: 2px solid rgb(16, 158, 3);
-        width: 400px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 5px 0 5px 0;
-        margin: auto;
-        text-align: center;
-        align-content: center;
-        margin-top: 10px;
+        background-color: rgb(247, 247, 247);
+        padding-left: 80px;
         display: none;
+    }
+    .product_description{
+        margin: 0;
     }
 
-    .favorite_msg{
-        border: 2px solid rgb(16, 158, 3);
-        width: 430px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 5px 0 5px 0;
-        margin: auto;
-        text-align: center;
-        align-content: center;
-        margin-top: 10px;
-        display: none;
-    }
-    .loading_error{
-        font-size: 1rem;
-    }
     /*                                                 NAV2 meny bar                                           */
     .nav2 {
         border-bottom: 1px solid rgb(112, 108, 108);
@@ -1122,23 +960,8 @@ input[type=text], textarea:focus{
     /*                                                    About us  desktop                                           */
 
     .container_aboutus {
-        background: radial-gradient(circle, rgba(252,171,134,1) 0%, rgba(255,155,155,1) 100%);
-        height: 400px;
-        position: relative;
-        bottom: 15px;
-    }
-    .aboutus:hover{
-        text-decoration: underline;
-        text-underline-offset: 3px;
-    }
-    .mid_text, .mid_text2 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: whitesmoke;
-        text-decoration: underline;
-        text-align: center;
-        padding-top: 100px;
-        margin-left: 90px;
+        padding: 140px 0;
+        object-fit: contain;
     }
 
     .mid_text2{
@@ -1146,406 +969,170 @@ input[type=text], textarea:focus{
     }
 
     .container_P {
-        font-size: 1rem;
-        font-weight: 700;
         display: flex;
-        margin-bottom: 30px;
-        display: flex;
-    }
-    .info1::first-letter, .info2::first-letter{
-        font-size: 2rem;
-    }
+    }   
 
-    .info1 {
-        margin: 0 30px 0 40px;
-    }
-
-    .info2 {
-        margin: 0 0 0 10px; 
+    .info1, .info2 {
+        padding: 0 30px;
     }
     /*                                              Contact desktop                              */
     
     .contact_container {
-        background: #74ebd5;
-        background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5); 
-        background: linear-gradient(to top, #ACB6E5, #74ebd5);
-        position: relative;
-        height: 550px;
+        display: flex;
     }
-
     .form_contact_container {
-        font-size: 1rem;
-        width: 0px;
-        height: 400px;
-        margin: 10px 0 0 65px;
-        background-color: white;
-        position: absolute;
-        top: 60px;
-        left: 60px;
+        width: 50%;
+        margin-top: 20px;
+    }
+    .contact_form{
+        max-width: 450px;
+    }
+    .contact_form label{
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    #contact_sumbit:hover {
+        background-color: lightsteelblue;
+    }
+    .contact_details_contrainer {
+        width: 40%;
     }
     .contact_sub_heading{
-        font-size: 1.5rem;
-        text-decoration: underline;
-        text-underline-offset: 3px;
+        font-weight: 400;
+        margin: 30px 0;
     }
-
-    .contact_details_contrainer {
-        display: inline-block;
-        position: absolute;
-        left: 800px;
-        top: 40px;
-        margin: auto;
-    }
-
     .contact_info{
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1.1rem;
-        margin: 20px 0;
     }
-    .icon_hover{
-        cursor: pointer;
+    .contact_info:hover,.fa-facebook-square:hover, .fa-instagram:hover, .fa-twitter:hover{
+        text-decoration: underline;
+        text-underline-offset: 2px;
     }
-
     .contact:hover{
         text-decoration: underline;
         text-underline-offset: 3px;
     }
-
-    input[type=name] {
-        width: 350px;
-        padding: 5px 10px;
-        margin: 8px 0 8px 0;
-        font-size: 1rem;
-        border-radius: 4px;
-    }
-
-    input[type=email] {
-        width: 350px;
-        padding: 5px 10px;
-        margin: 8px 0;
-        font-size: 1rem;  
-        border-radius: 4px;    
-    }
-    textarea {
-        height: 100px;
-        width: 350px;
-        margin: 12px 0;
-        font-size: 1.2rem;
-        padding: 5px 10px;
-        border: 1px solid;
-        border-radius: 4px;
-        resize: none;
-        
-    }
-    .contact_sumbit {
-        background-color: rgba(255, 255, 255, 0.295);
-        width: 375px;
-        padding: 10px 32px;
-        border-radius: 4px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1rem;
-        margin-top: 20px;
-        cursor: pointer;
-        font-weight: 600;
-    }
-    .contact_sumbit:hover{
-        background-color: rgb(101, 168, 223);
-    }
-
-
-    h3 {
-        font-size: 1.5rem;
-        margin: 20px 0 50px 0;
-    }
-
-    label{
-        display: block;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-    .message_sent{
-        border: 3px solid rgb(16, 160, 3);
-        background-color: white;
-        width: 400px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 5px 0 5px 0;
-        position: relative;
-        margin: auto;
-        text-align: center;
-        top: 10px;
-        display: none;
-    }
-
-    .contact_name_error, .contact_email_error, .contact_message_error{
-        color: red;
-        font-size: 0.8rem;
-        display: none;
-        margin-left: 10px;
-    }
-    /*                                              favorite desktop                           */
-    .Favorite_jackets_container {
-        font-size: 1rem;
-        font-weight: 600;
-        display: flex;
-        margin-top: 30px;
-        margin-left: 60px;
-        height: 500px;
-    }
-    
-    .fav_jacket1, .fav_jacket2, .fav_jacket3 {
-        padding: 0 20px;
-        margin: 20px 15px 0 15px;
-    }
-    
-    .addtobag_btn {
-        background-color: rgb(87, 86, 86);
-        border: none;
-        color: white;
-        text-align: center;
-        font-size: 1rem;
-        padding: 10px 25px 10px 25px;
-        cursor: pointer;
-        margin-left: 7px;
-        margin-top: 5px;
-        text-decoration: none;
-    }
-    
-    .addtobag_btn:hover{
-        background-color:rgb(51, 51, 51);
-    }
-    
-    .popUp{
-        border: 2px solid rgb(16, 158, 3);
-        width: 400px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 5px 0 5px 0;
-        margin: auto;
-        text-align: center;
-        align-content: center;
-        margin-top: 15px;
-        display: none;
-    }
     /*                                              your bag desktop                               */
-    .yourbag:hover {
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-    
+
     .jacket_container{
-        display: flex;
-        border-bottom: 1px solid black;
-        position: relative;
-        margin: 30px 0px;
+        margin-top: 0px;
     }
-    
+    .img_yourbag_container{
+        margin: 30px;
+    }
     .jacket_img_yourbag{
-        margin: 0 0 20px 30px;
+        padding: 10px;
     }
-    
+
+    .jacket_details_container{
+        text-align: start;
+    }
     .jacket_name {
         font-size: 1.2rem;
-        font-weight: 700;
-        position: absolute;
-        top: 10px;
-        left: 300px;
-        
     }
-    
     .size {
-        font-size: 1rem;
-        font-weight: 700;
-        position: absolute;
-        left: 300px ;
-        top: 90px;
+        font-size: 1.1rem;
+        padding: 10px;
     }
-    
-    
     .color {
-        font-size: 1rem;
-        font-weight: 700;
-        position: absolute;
-        left: 300px;
-        top: 120px;
+        font-size: 1.1rem;
+        padding: 10px;
     }
-    
+    .amount_container{
+        display: inline-flex;
+        padding: 30px;
+    }
     .amount {
-        font-size: 1rem;
-        font-weight: 700;
-        border: 1px solid;
-        height: 23px ;
-        position: absolute;
-        top: 80px;
-        right: 380px;
+        font-size: 1.3rem;
     }
-    
+    .btn_amount{
+        width: 35px;
+        height: 35px;
+        border: solid black 1px;
+    }
     .price {
-        font-size: 1.5rem;
-        font-weight: 900;
-        position: absolute;
-        right: 150px;
-        top: 65px;
+        font-size: 1.3rem;
     }
-    
-    .minus {
-        font-size: 1rem;
-        border-right: 1px solid;
-        padding: 0px 12px 0 10px;
-        font-weight: 800;
-    }
-    
-    .plus {
-        border-left: 1px solid;
-        padding: 0 8px 0 9px;
-        margin: 0 0 0 20px;
-    }
-    
     
     .checkout_container {
         font-size: 1.2rem;
-        font-weight: 700;
-        display: flex;
-        margin-left:920px;
+        padding-bottom: 30px;
     }
     .subtotal_yourbag {
-        margin-right: 30px ;
+        width: 40%;
+        margin-left: 60%;
     }
-    
     .pay_yourbag {
-        font-size: 1.5rem;
-        font-weight: 900;
-        position: relative;
-        bottom:10px;
+        display: "";
     }
-    
     .checkout_btn {
-        font-size: 1rem ;
-        font-weight: 700;
-        text-decoration: none;
-        padding: 10px 30px;
-        color: white;
-        background-color: rgb(75, 74, 74);
-        cursor: pointer;
-        margin-left: 935px;
-    }
-    
-    .checkout_btn:hover{
-        background-color: rgb(27, 27, 27);
+        width: 40%;
+        margin-left: 60%;
     }
     /*                                               payment desktop                              */
     .form_container {
+        position: "";
+    }
+    .billig_container{
         display: flex;
-        background: rgb(248, 222, 219);
-        padding-bottom: 95px;
-        position: relative;
+        margin: 0;
     }
-    
-    .contact_H1{
-        font-size:1.5rem;
-        font-weight: 800;
-        margin-left: 30px;
-        text-underline-offset: 4px;
-    }
-    
-    .payment:hover{
-        text-decoration: underline;
-    }
-    
     .billig_info {
         font-size: 1rem ;
-        font-weight: 900;
-        margin: 40px 0 0 180px;
+        width: 50%;
+        margin-top: 0;
+        padding: 20px 40px 0px 20px;
+    }
+
+    .credit_card_info_container{
+        width: 50%;
+        margin-top: 0;
+        padding: 20px 20px 0px 40px;
         
     }
-    #full_name, #address, #country {
-        width: 210px ;
-        height: 8px ;
-        margin: 10px 0;
-        font-size: 1rem;
-        padding: 10px;
+
+    #full_name, #email_payment, #address, #card_number, #card_holder {
+        max-width: 300;
     }
-    
-    #city, #zipcode {
-        width: 70px;
+    #country{
+        width: 150px;
+        margin: 13px 0;
+    }
+    #city {
+        width: 133px;
         height: 10px;
-        margin: 0 10px 0rem 10px; 
-        font-size: 1.3rem;
-        padding: 10px; 
+        padding: 12px; 
+        margin: 13px 5px;
+    }
+    #zipcode{
+        width: 100px;
+        height: 10px;
+        padding: 12px; 
+        margin: 15px 5px;
     }
     .city_zip_container{
-        display: flex;
-        height: 8px;
-        margin: 30px 0 50px 0;
+        padding-top: 5px;
     }
     
-    
-    .credit_card_info_container{
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 800px;
-        top: 40px;
-    
-    
-    }
-    
-    #card_number, #card_holder, #expire_date {
-        width: 210px;
+    #expire_date, #cvv {
+        width: 100px;
         height: 10px;
-        margin: 10px 0;
-        font-size: 1.3rem;
-        padding: 10px;
+        padding: 12px;
+        margin: 10px 5px;
     }
-    
-    #cvv {
-        width: 70px;
-        height: 10px;
-        font-size: 1.3rem;
-        padding: 10px;
-    }
-    
     .paynow_btn{
-        font-size: 1.5rem;
-        font-weight: 700;
-        width: 165px ;
-        height: 50px;
-        border-radius: 5%;
-        cursor: pointer;
-        background-color: rgb(233, 139, 139);
-        border: none;
-        position: relative;
-        right: 250px;
-        top: 50px;
-    }
-    
-    .paynow_btn:hover{
-        background-color: rgb(240, 108, 108);
+        width: 300px;
     }
     /*                                              footer desktop                               */
-    .container_footer{
-        font-size: 1rem;
-        font-weight: 700 ;
-    }
-    footer {
-        display: inline;
-    }
-}
+}   
 
 
 
 /* 
-fix loader / error text
-
 APIjacket to yourbag
 
-contact validate, expire date
-
-
-footer
-
+footer / yourbag
 
 github, html, report link alle 3
 */
